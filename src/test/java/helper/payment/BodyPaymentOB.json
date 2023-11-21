@@ -1,0 +1,49 @@
+{
+  "payload": [
+    {
+      "commerce": {
+        "commerceId": 999999990,
+        "terminalId": "ECENTR01",
+        "techVersion": "VT35",
+        "atmId": "ABCDEF5588",
+        "cod": "1234"
+      },
+      "transaction": {
+        "approvalNum": "x001A",
+        "responseCode": "00",
+        "status": "00",
+        "date": "",
+        "hour": "",
+        "authMode": "01",
+        "inMode": "033",
+        "receipt": "",
+        "rrn": "09333",
+        "dateTime": "",
+        "transactionType": "CAMBIO DE CLAVE"
+      },
+      "paymentMethod": {
+        "franchise": "MASTERCARD",
+        "millerNum": "54848948948",
+        "card": "1254258936521478",
+        "accountType": "CC"
+      },
+      "payment": {
+        "taxBase": "",
+        "incAmount": "",
+        "ivaAmount": "",
+        "tipAmount": "",
+        "fullAmount": ""
+      },
+      "script": "[0X0A][0X1C][0X2A][0X3A]p&r%u/e@b*ap&r%u/e@b*a[0X0A][0X1C][0X2A][0X3A]CL 12 # 212 - 212[0X0A][0X1A][0X2A][0X3A]C.UNICO: 112121212121[0X1B]TER: LEAL0041[0X0A][0X1A][0X2A][0X3A]CAJA C.F.            BC CUO: 02  [0X0A][0X1A]**9876[0X1C] RECIBO: 010103[0X1B] RRN: 00000023[0X0A][0X1C][0X2A][0X3B]ARQC: 7B4DE3DC57FD08D2[0X0A][0X1C]AID: AAA00000010003[0X0A][0X1C]AP LABEL: REDEBAN MB[0X0A][0X1A]VENTA           [0X1B]APRO: HOME01[0X0A][0X1A]COMPRA NETA[0X1B]     $ 30.000[0X0A][0X1A]IVA        [0X1B]          $ 1.000[0X0A][0X1A]INC        [0X1B]          $ 1.000[0X0A][0X1A]PROPINA    [0X1B]          $ 1.000[0X0A][0X1A][0X3C]TOTAL      [0X1B]     $ 33.000",
+      "signature": {
+        "signatureFlag": true,
+        "signature": "424D560C(12)3E(6)28(6)1A01(4)56(7)10001(10)180C(36){6}(40)FC(70)7E(70)7E(70)3F(70)1F8(70)FC(70)7E(70)3F(70)3F(70)1F8(70)FC(70)FC(70)7E(70)3F(70)3F(70)1F8(70)7C(70)7C(70)3E(70)1F(70)1F(71)F8(70)F8(70)7C(70)3E(70)3E(70)1F(48)4(22)F8(47)7(22)F8(47)78(21)7C(47)7E(21)7C(47)7F(21)3E(47)3FC(20)3E(47)1FF(20)1F(48)FFC(19)1F(48)7FF(20)F8(47)1FFC(19)F8(48)3FF(19)7C(49)FFC(18)7C(49)3FF(18)3E(50)FFE(17)3E(50)3FFC(16)1F(51)FFF(16)1F(51)3FFE(16)F8(51)FFFC(15)F8(51)1FFF8(14)7C(52)3FFF(14)7C(53)FFFE(13)3E(53)1FFFE(12)3E(54)3{4}8(10)1F(55)7{4}C(9)1F(56){5}8(9)F8(55)1{4}E(9)F8(56)1{4}C(8)7C(58)7FFF8(7)7C(59)3FFF(7)7C(60)7FFF(6)3E(60)1FFFE(5)3E(61)3FFF8(4)1F(62)7FFE(4)1F(63)FFF80001F(64)FFF(4)F8(63)1FFC000F8(64)7FF000F8(64)1FFE00F8(65)7FFC07C(66)FFF87C(66)3FFF7C(67){4}C(67)1FFFC(68)3FF8(69)7E(71)E(968)"
+      },
+      "notification": {
+        "notificationFlag": "true",
+        "cellphone": "3177928280",
+        "notificationType": "1"
+      }
+    }
+  ]
+}

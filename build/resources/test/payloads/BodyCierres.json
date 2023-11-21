@@ -1,0 +1,24 @@
+{
+  "payload": [
+    {
+      "commerce": {
+        "address": "",
+        "name": "testTT WWWWW TTTTTTTT FFFFFFF",
+        "terminalId": "",
+        "correspondentId": "",
+        "financialCode": ""
+      },
+      "transaction": {
+        "date": "#(dia)",
+        "dateTime": "#(diahoraminuto)",
+        "hour": "#(horaminuto)",
+        "techVersion": "V42343223T35T"
+      }
+    }
+  ]
+}
+
+
+
+
+

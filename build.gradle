@@ -1,0 +1,42 @@
+plugins {
+    id("java")
+}
+
+group = "co.com.voucherdigital"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    maven {
+        url 'https://repo.maven.apache.org/maven2';
+    }
+}
+task karateExecute(type: Exec) {
+    commandLine 'karate', 'src/test/java/notificaciones/aprobada/aprobadaOkKKKKKK.feature'
+}
+
+dependencies {
+    testImplementation 'com.intuit.karate:karate-junit5:1.2.0.RC4'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    implementation 'net.masterthought:cucumber-reporting:5.7.5'
+    testImplementation 'junit:junit:4.13.1'
+    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+    implementation 'mysql:mysql-connector-java:8.0.23'
+    implementation 'org.postgresql:postgresql:9.4.1212'
+    //classpath 'com.intuit.karate:karate-maven-plugin:1.5.0'
+
+
+}
+
+
+test {
+    useJUnitPlatform()
+}
+
+sourceSets {
+    test {
+        resources {
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
+}

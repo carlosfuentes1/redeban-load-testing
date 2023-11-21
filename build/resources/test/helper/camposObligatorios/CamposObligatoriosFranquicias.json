@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "commerce": {
+        "commerceId": 1234567890,
+        "terminalId": "222222",
+        "techVersion": "22222"
+      },
+      "transaction": {
+        "approvalNum": "HOME01",
+        "responseCode": "01",
+        "status": "00",
+        "date": "",
+        "hour": "",
+        "authMode": "01",
+        "inMode": "022",
+        "receipt": "",
+        "rrn": "000394",
+        "dateTime": "",
+        "transactionType": "TRANSFERENCIA AHORRO"
+      },
+      "paymentMethod": {
+        "franchise": "",
+        "card": "539612**7515",
+        "accountType": "AH"
+      },
+      "payment": {
+        "taxBase": "321001234567",
+        "incAmount": "321001234567",
+        "ivaAmount": "321001234567",
+        "tipAmount": "321001234567",
+        "fullAmount": "321001234567"
+      },
+      "script": "[0X0A][0X1C][0X2A][0X3A]CORRESPONSAL[0X0A][0X1C][0X2A][0X3A]BANCOLOMBIA[0X0A][0X1C][0X2A][0X3A]CONSULTORIO MEDICO MED[0X0A][0X1C][0X2A][0X3A]CRA. 48 # 26-85[0X0A][0X1A][0X2A][0X3A]C.UNICO: 3007013108 [0X1B]TER: NETCOM02[0X0A][[0X0A][0X1C]     RECIBO: 000026[0X1B] RRN: 358545[0X0A][0X1A][0X2A][0X3A]Producto: 1234567890[0X0A][0X1A]DEPOSITO        [0X1B]APRO: HOME67[0X0A][0X1A][0X3C]VALOR      [0X1B]   $ 400.000[0X0A][0X1C]TU CORRESPONSAL BANCARIO NO DEBE[0X0A][0X1C]COBRARTE POR HACER ESTA TRANSACCION.",
+      "signature": {
+        "signatureFlag": false
+      },
+      "notification": {
+        "notificationFlag": false
+      }
+    }
+  ]
+}
