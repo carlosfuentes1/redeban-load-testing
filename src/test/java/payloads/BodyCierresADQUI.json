@@ -1,0 +1,23 @@
+{
+  "payload": [
+    {
+      "commerce": {
+        "address": "Calle Correcto",
+        "name": "test",
+        "terminalId": "LEAL0041",
+        "commerceId": 112121212121
+      },
+      "transaction": {
+        "date": "#(dia)",
+        "dateTime": "#(diahoraminuto)",
+        "hour": "#(horaminuto)",
+        "techVersion": "V-T35T"
+      }
+    }
+  ]
+}
+
+
+
+
+
