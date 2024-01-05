@@ -2,8 +2,8 @@
   "payload": [
     {
       "commerce": {
-        "correspondentId": 32692899,
-        "terminalId": "AMERICANIN",
+        "correspondentId": "2012202302",
+        "terminalId": "LEAL2022",
         "techVersion": "V-T35ggT",
         "financialCode": "",
         "atmId": ""

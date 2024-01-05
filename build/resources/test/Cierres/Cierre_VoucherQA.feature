@@ -15,7 +15,7 @@ Feature: Ejecutar Endpoint para realizar el cierre Correcto de una terminal o Da
     And header x-api-key = apiKey
     And request bodyTrx.payload[0].commerce.financialCode = '<financialCode>'
     And request bodyTrx.payload[0].commerce.address = <address>
-    And request bodyTrx.payload[0].commerce.correspondentId = '32692899'
+    And request bodyTrx.payload[0].commerce.correspondentId = '2012202301'
     And request bodyTrx.payload[0].commerce.terminalId = '<terminal>'
     And request bodyTrx
     When method post
@@ -24,16 +24,16 @@ Feature: Ejecutar Endpoint para realizar el cierre Correcto de una terminal o Da
     And match response.status[0].statusDescription == 'PROCESSED'
     And match response.status[0].statusCode == '00'
     Examples:
-      | financialCode | address                                     | terminal   |
-      | 0001          | 'Calle Correcto - TTTTT -WWWW -eeeee ttttt' | AMERICANIN |
-#      | 0002          | 'Calle ttttt'                               | AMERICANIN |
-#      | 0007          | 'Calle Correcto - TTTTT -WWWW -eeeee ttttt' | AMERICANIN |
-#      | 0013          | 'Calle ttttt'                               | AMERICANIN |
-#      | 0023          | 'Calle Correcto - TTTTT -WWWW -eeeee ttttt' | AMERICANIN |
-#      | 0051          | 'Calle ttttt'                               | AMERICANIN |
-#      | 0052          | 'Calle Correcto - TTTTT -WWWW -eeeee ttttt' | AMERICANIN |
-#      | 0903          | 'Calle ttttt'                               | AMERICANIN |
-#      | 6666          | 'Calle Correcto - TTTTT -WWWW -eeeee ttttt' | AMERICANIN |
+      | financialCode | address                           | terminal |
+#      | 0001          | 'PRUEBAS CIERRES MIXTO CORR 0001' | LEAL2022 |
+#      | 0002          | 'PRUEBAS CIERRES MIXTO CORR 0002' | LEAL2024 |
+#      | 0007          | 'PRUEBAS CIERRES MIXTO CORR 0007' | LEAL2024 |
+#      | 0013          | 'PRUEBAS CIERRES MIXTO CORR 0013' | LEAL2024 |
+      | 0023          | 'PRUEBAS CIERRES MIXTO CORR 0023' | LEAL2022 |
+#      | 0051          | 'PRUEBAS CIERRES MIXTO CORR 0051' | LEAL2024 |
+#      | 0052          | 'PRUEBAS CIERRES MIXTO CORR 0052' | LEAL2024 |
+#      | 0903          | 'PRUEBAS CIERRES MIXTO CORR 0903' | LEAL2024 |
+      #| 6666          | 'PRUEBAS CIERRES MIXTO CORR' | LEAL2024 |
       #| 2222          |
       #| 3333          |
       #| 4444          |

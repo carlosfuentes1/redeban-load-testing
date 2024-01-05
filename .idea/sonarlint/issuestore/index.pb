@@ -120,3 +120,17 @@ S
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+\
+,src/test/java/payloads/BodyCierresADQUI.json,3\b\3b29adadd469f5ed6cb47d1d9fe6d4677c7bbc1b
+c
+3src/test/java/CORRandADQUI/aprobadaOkKKKKKK.feature,b\9\b9c5c11f8ec37e0932b4badfff6f1006e2183760
+e
+5src/test/java/CORRandADQUI/TransaccionalADQUI.feature,8\b\8b27e182e737e4ca96f420c46af8765a2c30e756
+_
+/src/test/java/helper/CrearTokenDEVADQUI.feature,9\8\9855a6ee59fc96fdd4b7f36ffb71c06927744e14
+^
+.src/test/java/payloads/BodyTrxAdquirencia.json,3\9\39e2e823e63b3457f294bccb672b3c435d7fdbf7
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
