@@ -2,8 +2,8 @@
   "payload": [
     {
       "commerce": {
-        "commerceId": 2012202301,
-        "terminalId": "LEAL2022",
+        "commerceId": "",
+        "terminalId": "",
         "techVersion": "V-T35T",
         "atmId": ""
       },

@@ -2,11 +2,12 @@
   "payload": [
     {
       "commerce": {
-        "correspondentId": "2012202302",
-        "terminalId": "LEAL2022",
+        "correspondentId": "",
+        "terminalId": "",
         "techVersion": "V-T35ggT",
         "financialCode": "",
-        "atmId": ""
+        "atmId": "",
+        "originMethod": "2"
       },
       "transaction": {
         "approvalNum": "x001A",
@@ -40,9 +41,9 @@
         "signature": "424D560C(12)3E(6)28(6)1A01(4)56(7)10001(10)180C(36){6}(40)FC(70)7E(70)7E(70)3F(70)1F8(70)FC(70)7E(70)3F(70)3F(70)1F8(70)FC(70)FC(70)7E(70)3F(70)3F(70)1F8(70)7C(70)7C(70)3E(70)1F(70)1F(71)F8(70)F8(70)7C(70)3E(70)3E(70)1F(48)4(22)F8(47)7(22)F8(47)78(21)7C(47)7E(21)7C(47)7F(21)3E(47)3FC(20)3E(47)1FF(20)1F(48)FFC(19)1F(48)7FF(20)F8(47)1FFC(19)F8(48)3FF(19)7C(49)FFC(18)7C(49)3FF(18)3E(50)FFE(17)3E(50)3FFC(16)1F(51)FFF(16)1F(51)3FFE(16)F8(51)FFFC(15)F8(51)1FFF8(14)7C(52)3FFF(14)7C(53)FFFE(13)3E(53)1FFFE(12)3E(54)3{4}8(10)1F(55)7{4}C(9)1F(56){5}8(9)F8(55)1{4}E(9)F8(56)1{4}C(8)7C(58)7FFF8(7)7C(59)3FFF(7)7C(60)7FFF(6)3E(60)1FFFE(5)3E(61)3FFF8(4)1F(62)7FFE(4)1F(63)FFF80001F(64)FFF(4)F8(63)1FFC000F8(64)7FF000F8(64)1FFE00F8(65)7FFC07C(66)FFF87C(66)3FFF7C(67){4}C(67)1FFFC(68)3FF8(69)7E(71)E(968)"
       },
       "notification": {
-        "notificationFlag": "",
+        "notificationFlag": "true",
         "cellphone": "3177928280",
-        "notificationType": ""
+        "notificationType": "1"
       }
     }
   ]

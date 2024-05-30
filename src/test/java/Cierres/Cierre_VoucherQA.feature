@@ -15,7 +15,7 @@ Feature: Ejecutar Endpoint para realizar el cierre Correcto de una terminal o Da
     And header x-api-key = apiKey
     And request bodyTrx.payload[0].commerce.financialCode = '<financialCode>'
     And request bodyTrx.payload[0].commerce.address = <address>
-    And request bodyTrx.payload[0].commerce.correspondentId = '2012202301'
+    And request bodyTrx.payload[0].commerce.correspondentId = '92933392'
     And request bodyTrx.payload[0].commerce.terminalId = '<terminal>'
     And request bodyTrx
     When method post
@@ -25,14 +25,15 @@ Feature: Ejecutar Endpoint para realizar el cierre Correcto de una terminal o Da
     And match response.status[0].statusCode == '00'
     Examples:
       | financialCode | address                           | terminal |
-#      | 0001          | 'PRUEBAS CIERRES MIXTO CORR 0001' | LEAL2022 |
-#      | 0002          | 'PRUEBAS CIERRES MIXTO CORR 0002' | LEAL2024 |
-#      | 0007          | 'PRUEBAS CIERRES MIXTO CORR 0007' | LEAL2024 |
-#      | 0013          | 'PRUEBAS CIERRES MIXTO CORR 0013' | LEAL2024 |
-      | 0023          | 'PRUEBAS CIERRES MIXTO CORR 0023' | LEAL2022 |
-#      | 0051          | 'PRUEBAS CIERRES MIXTO CORR 0051' | LEAL2024 |
-#      | 0052          | 'PRUEBAS CIERRES MIXTO CORR 0052' | LEAL2024 |
-#      | 0903          | 'PRUEBAS CIERRES MIXTO CORR 0903' | LEAL2024 |
+      | 0001          | 'PRUEBAS CIERRES MIXTO CORR 0001' | DGSDYFDYE3 |
+      | 0002          | 'PRUEBAS CIERRES MIXTO CORR 0002' | DGSDYFDYE3 |
+      | 0007          | 'PRUEBAS CIERRES MIXTO CORR 0007' | DGSDYFDYE3 |
+      | 0013          | 'PRUEBAS CIERRES MIXTO CORR 0013' | DGSDYFDYE3 |
+      | 0023          | 'PRUEBAS CIERRES MIXTO CORR 0023' | DGSDYFDYE3 |
+      | 0051          | 'PRUEBAS CIERRES MIXTO CORR 0051' | VZASGHDF |
+      | 0051          | 'PRUEBAS CIERRES MIXTO CORR 0051' | AA9642A5 |
+#      | 0052          | 'PRUEBAS CIERRES MIXTO CORR 0052' | DGSDYFDYE3 |
+#      | 0903          | 'PRUEBAS CIERRES MIXTO CORR 0903' | DGSDYFDYE3 |
       #| 6666          | 'PRUEBAS CIERRES MIXTO CORR' | LEAL2024 |
       #| 2222          |
       #| 3333          |

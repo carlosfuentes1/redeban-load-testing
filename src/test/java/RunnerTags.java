@@ -17,14 +17,14 @@ class RunnerTags {
 
     @Test
     void testParallel() {
-       //Results results = Runner.path("classpath:CORRandADQUI/aprobadaOkKKKKKK.feature")
-        //Results results = Runner.path("classpath:CORRandADQUI/TransaccionalADQUI.feature")
+       Results results = Runner.path("classpath:ADQUI")
+        //Results results = Runner.path("classpath:CORR")
 
-       Results results = Runner.path("classpath:Cierres/Cierre_VoucherQA.feature")
+      //Results results = Runner.path("classpath:Cierres/Cierre_VoucherQA.feature")
                 .outputCucumberJson(true)
                 .tags("~@ignore")
-                //.karateEnv("dev-adqui")
-                .karateEnv("dev-corr")
+                .karateEnv("dev-adqui")
+                //.karateEnv("dev-corr")
                 .parallel(4);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());

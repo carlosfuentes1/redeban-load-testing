@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4}];
+var items = [{"id":1,"group":1,"content":"CORRandADQUI\/TransaccionalADQUI[1.1:88]","start":1706301525373,"end":1706301531622,"title":"CORRandADQUI\/TransaccionalADQUI[1.1:88] 15:38:45.373-15:38:51.622 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":2,"group":2,"content":"CORRandADQUI\/TransaccionalADQUI[1.2:89]","start":1706301525373,"end":1706301531606,"title":"CORRandADQUI\/TransaccionalADQUI[1.2:89] 15:38:45.373-15:38:51.606 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":3,"group":3,"content":"CORRandADQUI\/TransaccionalADQUI[1.3:90]","start":1706301525372,"end":1706301531698,"title":"CORRandADQUI\/TransaccionalADQUI[1.3:90] 15:38:45.372-15:38:51.698 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":4,"group":4,"content":"CORRandADQUI\/TransaccionalADQUI[1.4:91]","start":1706301525373,"end":1706301532078,"title":"CORRandADQUI\/TransaccionalADQUI[1.4:91] 15:38:45.373-15:38:52.078 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":5,"group":2,"content":"CORRandADQUI\/TransaccionalADQUI[1.5:92]","start":1706301531616,"end":1706301535145,"title":"CORRandADQUI\/TransaccionalADQUI[1.5:92] 15:38:51.616-15:38:55.145 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":6,"group":1,"content":"CORRandADQUI\/TransaccionalADQUI[1.6:93]","start":1706301531629,"end":1706301535299,"title":"CORRandADQUI\/TransaccionalADQUI[1.6:93] 15:38:51.629-15:38:55.299 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":7,"group":3,"content":"CORRandADQUI\/TransaccionalADQUI[1.7:94]","start":1706301531704,"end":1706301535100,"title":"CORRandADQUI\/TransaccionalADQUI[1.7:94] 15:38:51.704-15:38:55.100 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":8,"group":4,"content":"CORRandADQUI\/TransaccionalADQUI[1.8:95]","start":1706301532086,"end":1706301535461,"title":"CORRandADQUI\/TransaccionalADQUI[1.8:95] 15:38:52.086-15:38:55.461 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":9,"group":3,"content":"CORRandADQUI\/TransaccionalADQUI[1.9:96]","start":1706301535109,"end":1706301538618,"title":"CORRandADQUI\/TransaccionalADQUI[1.9:96] 15:38:55.109-15:38:58.618 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":10,"group":2,"content":"CORRandADQUI\/TransaccionalADQUI[1.10:97]","start":1706301535152,"end":1706301538623,"title":"CORRandADQUI\/TransaccionalADQUI[1.10:97] 15:38:55.152-15:38:58.623 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

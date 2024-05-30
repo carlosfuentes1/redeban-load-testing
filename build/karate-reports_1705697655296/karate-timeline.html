@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4}];
+var items = [{"id":1,"group":1,"content":"CORRandADQUI\/aprobadaOkKKKKKK[1.1:59]","start":1705697545951,"end":1705697550011,"title":"CORRandADQUI\/aprobadaOkKKKKKK[1.1:59] 15:52:25.951-15:52:30.011 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":2,"group":2,"content":"CORRandADQUI\/aprobadaOkKKKKKK[1.2:60]","start":1705697545951,"end":1705697550073,"title":"CORRandADQUI\/aprobadaOkKKKKKK[1.2:60] 15:52:25.951-15:52:30.073 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":3,"group":3,"content":"CORRandADQUI\/aprobadaOkKKKKKK[1.3:61]","start":1705697545951,"end":1705697550051,"title":"CORRandADQUI\/aprobadaOkKKKKKK[1.3:61] 15:52:25.951-15:52:30.051 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":4,"group":4,"content":"CORRandADQUI\/aprobadaOkKKKKKK[1.4:62]","start":1705697545951,"end":1705697549987,"title":"CORRandADQUI\/aprobadaOkKKKKKK[1.4:62] 15:52:25.951-15:52:29.987 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":5,"group":4,"content":"CORRandADQUI\/aprobadaOkKKKKKK[1.5:63]","start":1705697549993,"end":1705697551217,"title":"CORRandADQUI\/aprobadaOkKKKKKK[1.5:63] 15:52:29.993-15:52:31.217 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":6,"group":1,"content":"CORRandADQUI\/aprobadaOkKKKKKK[1.6:64]","start":1705697550019,"end":1705697551466,"title":"CORRandADQUI\/aprobadaOkKKKKKK[1.6:64] 15:52:30.019-15:52:31.466 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":7,"group":3,"content":"CORRandADQUI\/aprobadaOkKKKKKK[1.7:65]","start":1705697550057,"end":1705697551494,"title":"CORRandADQUI\/aprobadaOkKKKKKK[1.7:65] 15:52:30.057-15:52:31.494 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"},{"id":8,"group":2,"content":"CORRandADQUI\/aprobadaOkKKKKKK[1.8:66]","start":1705697550078,"end":1705697551376,"title":"CORRandADQUI\/aprobadaOkKKKKKK[1.8:66] 15:52:30.078-15:52:31.376 peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

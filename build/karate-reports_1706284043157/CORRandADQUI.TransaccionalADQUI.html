@@ -1,0 +1,2445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>CORRandADQUI.TransaccionalADQUI</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-01-26 10:44:23 a. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:83]"><span>[1.1:83]</span> <span>peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">CORRandADQUI/TransaccionalADQUI.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Ejecutar Endpoint para crear una transaccion aprobada con firma y validando distintos datos de respuesta</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:83]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:83]</span>
+                <span class="scenario-name">peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4241</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:83]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyTrx = read(&#39;classpath:payloads/BodyTrxAdquirencia.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">64</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">10:44:18.909 &lt;&lt; lock released, cached callSingle: classpath:helper/CrearTokenDEVADQUI.feature
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helper.CrearTokenDEVADQUI</div>
+      </div>
+      <div class="time-cell passed">1734</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4.0.call.0.4">10:44:17.099 karate.env system property was: dev-adqui 
+10:44:17.109 &gt;&gt; lock acquired, begin callSingle: classpath:helper/CrearTokenDEVADQUI.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/x-www-form-urlencoded&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = tokenAuthorization</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request &#39;grant_type=client_credentials&amp;Scope=consumers%2Ffabrica&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1727</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4.0.call.0.8">10:44:17.872 request:
+1 &gt; POST https://voucherdigitalclouddev.auth.us-east-1.amazoncognito.com/oauth2/token
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Authorization: Basic M2ZkbjdjdmtrM24zbW1ibTN2aWRtcjZ2Y2U6MWQ4cjQyNDNicjMwYm1kcjB2ajJkMjYydTJwZWU5NjY5ZmdrNXQxZ2M3ZTZ1YWc0bTd0ZA==
+1 &gt; Content-Length: 55
+1 &gt; Host: voucherdigitalclouddev.auth.us-east-1.amazoncognito.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
+
+10:44:18.863 response time in milliseconds: 981
+1 &lt; 200
+1 &lt; Date: Fri, 26 Jan 2024 15:44:19 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy-Report-Only: script-src https://d3oia8etllorh5.cloudfront.net https://voucherdigitalclouddev.auth.us-east-1.amazoncognito.com; style-src https://d3oia8etllorh5.cloudfront.net https://voucherdigitalclouddev.auth.us-east-1.amazoncognito.com; img-src https://d3oia8etllorh5.cloudfront.net https://voucherdigitalclouddev.auth.us-east-1.amazoncognito.com; report-uri https://voucherdigitalclouddev.auth.us-east-1.amazoncognito.com/cspreport
+1 &lt; x-amz-cognito-request-id: 8bb31e41-42cf-45df-9938-0993376a0578
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Server: Server
+1 &lt; Set-Cookie: XSRF-TOKEN=0a267465-0c8f-4bca-84c7-92f6271219a8; Domain=voucherdigitalclouddev.auth.us-east-1.amazoncognito.com; Secure
+{&quot;access_token&quot;:&quot;eyJraWQiOiJEK1lFdFlkdDdPeDUrU3prUWhoNDI0RnpId3dhQ3hNYlwvUng4YWUxTnZRYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzZmRuN2N2a2szbjNtbWJtM3ZpZG1yNnZjZSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA2MjgzODU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV85dWM0ZGlWeloiLCJleHAiOjE3MDYyODU2NTksImlhdCI6MTcwNjI4Mzg1OSwidmVyc2lvbiI6MiwianRpIjoiM2M0NjMwNzgtZDI0Zi00ZmE0LWE4NGMtYjVjMDMxMGI1MTIxIiwiY2xpZW50X2lkIjoiM2ZkbjdjdmtrM24zbW1ibTN2aWRtcjZ2Y2UifQ.P7MviYpWK6PW02-A3GQGAZIKbx-QqDMFTmoOsI16h21ei1lXVhQom-4TNJra7OfnYVFm35eSMeM7T9SCr4hMBXnDs3u3oN_PhXUKj-skEWfbEX55btroodlgimCR3n46FeQc-iBqtvQjjX8A3DW8wzqLBSk4mG9TyK-GTnDOGVacqVZO66wAF7ZhvXHa8ABEjo4sslu2aUGMOjPySPYeLM6qkRwR-n7mlJ33PqaxA3tqgNiwB-cKuFTDpis4YC3bp73jb_HSfe-ZpGDn-djsZ0nUY8BeU7ks2t8RRo07uk9vAVWLWwEHmUotHeq72PfCGb5pdOvvAVbLMTxPJoDyMw&quot;,&quot;expires_in&quot;:1800,&quot;token_type&quot;:&quot;Bearer&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def access_token = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseTimeRange = { min: 10, max: 15000 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helper.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def NumReceipt = dataGenerator.getRandomNumReceipt()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">37</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.receipt = NumReceipt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].payment.fullAmount = NumReceipt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].payment.taxBase = NumReceipt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.rrn = NumReceipt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].paymentMethod.card = dataGenerator.getRandomValueCard()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].commerce.atmId = dataGenerator.getRandomValueCajero()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.rrn = NumReceipt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.approvalNum = NumReceipt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dateTimes = karate.call(&#39;classpath:helper/dateTime.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">618</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.dateTime = dateTimes.date</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref bg-step">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.hour = dateTimes.hora</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref bg-step">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.date = dateTimes.dia</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def sleep = function(pause){ java.lang.Thread.sleep(pause)}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path pathUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header x-api-key = apiKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].transaction.status = &#39;00&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].paymentMethod.accountType = &quot;LT&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].paymentMethod.franchise = &quot;MAESTRO&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].transaction.transactionType = &quot;LEALTADPLUS&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">449</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.31">10:44:19.718 request:
+2 &gt; POST https://api.redebanvd.net/transactional/api/vouchers/transactions
+2 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
+2 &gt; Authorization: Bearer eyJraWQiOiJEK1lFdFlkdDdPeDUrU3prUWhoNDI0RnpId3dhQ3hNYlwvUng4YWUxTnZRYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzZmRuN2N2a2szbjNtbWJtM3ZpZG1yNnZjZSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA2MjgzODU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV85dWM0ZGlWeloiLCJleHAiOjE3MDYyODU2NTksImlhdCI6MTcwNjI4Mzg1OSwidmVyc2lvbiI6MiwianRpIjoiM2M0NjMwNzgtZDI0Zi00ZmE0LWE4NGMtYjVjMDMxMGI1MTIxIiwiY2xpZW50X2lkIjoiM2ZkbjdjdmtrM24zbW1ibTN2aWRtcjZ2Y2UifQ.P7MviYpWK6PW02-A3GQGAZIKbx-QqDMFTmoOsI16h21ei1lXVhQom-4TNJra7OfnYVFm35eSMeM7T9SCr4hMBXnDs3u3oN_PhXUKj-skEWfbEX55btroodlgimCR3n46FeQc-iBqtvQjjX8A3DW8wzqLBSk4mG9TyK-GTnDOGVacqVZO66wAF7ZhvXHa8ABEjo4sslu2aUGMOjPySPYeLM6qkRwR-n7mlJ33PqaxA3tqgNiwB-cKuFTDpis4YC3bp73jb_HSfe-ZpGDn-djsZ0nUY8BeU7ks2t8RRo07uk9vAVWLWwEHmUotHeq72PfCGb5pdOvvAVbLMTxPJoDyMw
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 2807
+2 &gt; Host: api.redebanvd.net
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;commerceId&quot;:2012202301,&quot;terminalId&quot;:&quot;LEAL2022&quot;,&quot;techVersion&quot;:&quot;V-T35T&quot;,&quot;atmId&quot;:&quot;222491aBcD&quot;},&quot;transaction&quot;:{&quot;approvalNum&quot;:731067,&quot;responseCode&quot;:&quot;12&quot;,&quot;status&quot;:&quot;00&quot;,&quot;date&quot;:&quot;20240126&quot;,&quot;hour&quot;:&quot;1044&quot;,&quot;authMode&quot;:&quot;01&quot;,&quot;inMode&quot;:&quot;03X&quot;,&quot;receipt&quot;:731067,&quot;rrn&quot;:731067,&quot;dateTime&quot;:&quot;20240126104400&quot;,&quot;transactionType&quot;:&quot;LEALTADPLUS&quot;},&quot;paymentMethod&quot;:{&quot;franchise&quot;:&quot;MAESTRO&quot;,&quot;millerNum&quot;:&quot;54848948948&quot;,&quot;card&quot;:&quot;56611963****8712&quot;,&quot;accountType&quot;:&quot;LT&quot;},&quot;payment&quot;:{&quot;taxBase&quot;:731067,&quot;incAmount&quot;:&quot;0&quot;,&quot;ivaAmount&quot;:&quot;0&quot;,&quot;tipAmount&quot;:&quot;0&quot;,&quot;fullAmount&quot;:731067},&quot;script&quot;:&quot;[0X0A][0X1C][0X2C][0X3B]p&amp;r%u\/e@b*ap&amp;r%u\/e@b*a[0X0A][0X1C][0X2C][0X3B]CR 20 33 - 15 [0X0A][0X1A][0X2A][0X3A]C.UNICO:112121212121 [0X1B]TER:LEAL0041[0X0A][0X1A]MASTERCARD[0X1C]EXP:2710 CUO:2[0X1B]CR[0X0A][0X1A]528209**5461[0X1C]RECIBO:000034[0X1B]RRN:000955[0X0A][0X1C]ARQC:7110DDB67A6B1AB0[0X0A][0X1C]AID:A0000000041010[0X0A][0X1C]AP LABEL:Mastercard[0X0A] [0X0A][0X1A]VENTA[0X1B]APRO:HOME01[0X0A][0X1A]COMPRA NETA:[0X1B]$ 46.463[0X0A][0X1A]IVA:[0X1B]$ 330[0X0A][0X1A]INC:[0X1B]$ 440[0X0A][0X1A]PROPINA:[0X1B]$ 23.323[0X0A][0X3C][0X1A]TOTAL:[0X1B]$ 438.786[0X0A]&quot;,&quot;signature&quot;:{&quot;signatureFlag&quot;:true,&quot;signature&quot;:&quot;424D3E0F(12)3E(6)28(6)2C01(4)6(8)10001(56)B1{6}01{75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){41}E0{32}(5){40}8000{31}(5){39}000E01{30}(5){37}C003FFE01{29}(5){36}E007{4}C01{28}(5){36}C1{7}C03{27}(5){36}8{9}C07{26}(5){36}9{10}80{26}(5){36}9{11}01{25}(5){36}9{11}E03{24}(5){36}1{12}C07{23}(5){36}3{13}80{23}(5){35}E3{14}01{22}(5){35}E7{14}E03{21}(5){35}C7{15}C03{20}(5){35}C{17}807{19}(5){35}C{18}80{19}(5){35}C{19}00{18}(5){35}C{19}E03{17}(5){35}8{20}E3{17}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{17}3{21}(5){35}9{17}3{21}(5){35}9{16}E3{21}(5){35}8{16}E7{21}(5){35}C{16}C7{21}(5){35}C{16}8{22}(5){35}C{16}9{22}(5){35}C{16}1{22}(5){35}C{16}3{22}(5){35}C{15}E3{22}(5){35}C{15}E7{22}(5){35}C7{14}C7{22}(5){35}E7FFF03{9}C{23}(5){35}E7F0003{9}8{23}(5){34}E(5)7{10}1{23}(5){30}C(7)7{11}E3{23}(5){27}E(7)F3{13}E7{23}(5){26}80001{5}3{13}C7{23}(5){25}000{8}3{13}C{24}(5){10}9{12}E003{9}1{13}C{24}(5){10}9{11}8007{10}9{13}8{24}(5){10}8{10}000{12}9{12}E1{24}(5){10}C{8}E003{13}9{12}C3{24}(5){10}C7{6}8007{14}8{12}8{25}(5){10}E3{5}000{16}C{12}1{25}(5){11}3FFFE003{17}C7{10}C3{25}(5){11}1FF8007{18}E7{10}87{25}(5){11}9F000{20}E3{9}E1{26}(5){11}8003{22}3{9}C3{26}(5){11}C07{23}1{9}0{27}(5){11}C{25}9{8}C1{27}(5){37}8{8}87{27}(5){37}C{7}E1{28}(5){37}C7{6}03{28}(5){37}E3{5}00{29}(5){38}3FFFC007{29}(5){38}03F8007{30}(5){38}80001{32}(5){39}803{33}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5)&quot;},&quot;notification&quot;:{&quot;notificationFlag&quot;:true,&quot;cellphone&quot;:&quot;3177928280&quot;,&quot;notificationType&quot;:1}}]}
+
+10:44:20.159 response time in milliseconds: 441
+2 &lt; 200
+2 &lt; Content-Type: application/json
+2 &lt; Content-Length: 773
+2 &lt; Connection: keep-alive
+2 &lt; Date: Fri, 26 Jan 2024 15:44:21 GMT
+2 &lt; x-amzn-RequestId: ea25c948-acd7-472d-a1bf-dd4bff0458fc
+2 &lt; x-amz-apigw-id: SJ31XF1QIAMEM1g=
+2 &lt; X-Amzn-Trace-Id: Root=1-65b3d355-173e695945ff248d27474a8f
+2 &lt; X-Cache: Miss from cloudfront
+2 &lt; Via: 1.1 62223de0c21500c1b860f7e075e09f40.cloudfront.net (CloudFront)
+2 &lt; X-Amz-Cf-Pop: MIA3-C5
+2 &lt; X-Amz-Cf-Id: fZiafmf4aFtB96lwzf8PPE6k5e4JLn8lp5o800OSWpebDiKFIc-5xA==
+{&quot;resultObject&quot;:[{&quot;commerce&quot;:{&quot;commerceId&quot;:&quot;2012202301&quot;,&quot;terminalId&quot;:&quot;LEAL2022&quot;,&quot;techVersion&quot;:&quot;V-T35T&quot;,&quot;atmId&quot;:&quot;222491aBcD&quot;},&quot;transaction&quot;:{&quot;voucherId&quot;:&quot;LEAL202273106773106720240126104400&quot;,&quot;approvalNum&quot;:&quot;731067&quot;,&quot;responseCode&quot;:&quot;12&quot;,&quot;status&quot;:&quot;00&quot;,&quot;date&quot;:&quot;2024-01-26&quot;,&quot;hour&quot;:&quot;10:44:00&quot;,&quot;authMode&quot;:&quot;01&quot;,&quot;inMode&quot;:&quot;03X&quot;,&quot;receipt&quot;:&quot;731067&quot;,&quot;rrn&quot;:&quot;731067&quot;,&quot;dateTime&quot;:&quot;2024-01-26T10:44:00&quot;,&quot;transactionType&quot;:&quot;LEALTADPLUS&quot;},&quot;paymentMethod&quot;:{&quot;franchise&quot;:&quot;MAESTRO&quot;,&quot;millerNum&quot;:&quot;54848948948&quot;,&quot;card&quot;:&quot;56611963****8712&quot;,&quot;accountType&quot;:&quot;LT&quot;},&quot;payment&quot;:{&quot;taxBase&quot;:&quot;731067&quot;,&quot;incAmount&quot;:&quot;0&quot;,&quot;ivaAmount&quot;:&quot;0&quot;,&quot;tipAmount&quot;:&quot;0&quot;,&quot;fullAmount&quot;:&quot;731067&quot;}}],&quot;status&quot;:[{&quot;transactionId&quot;:&quot;LEAL202273106773106720240126104400&quot;,&quot;statusCode&quot;:&quot;00&quot;,&quot;statusDescription&quot;:&quot;PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240126104421&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.status[0].statusDescription == &#39;PROCESSED&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.resultObject[0].transaction.status == &#39;00&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>eval sleep(700)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">726</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path pathUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header x-api-key = apiKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].transaction.status = &#39;05&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].paymentMethod.accountType = &quot;LT&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].paymentMethod.franchise = &quot;MAESTRO&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].transaction.transactionType = &quot;LEALTADPLUS&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">293</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.45">10:44:20.918 request:
+3 &gt; POST https://api.redebanvd.net/transactional/api/vouchers/transactions
+3 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
+3 &gt; Authorization: Bearer eyJraWQiOiJEK1lFdFlkdDdPeDUrU3prUWhoNDI0RnpId3dhQ3hNYlwvUng4YWUxTnZRYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzZmRuN2N2a2szbjNtbWJtM3ZpZG1yNnZjZSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA2MjgzODU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV85dWM0ZGlWeloiLCJleHAiOjE3MDYyODU2NTksImlhdCI6MTcwNjI4Mzg1OSwidmVyc2lvbiI6MiwianRpIjoiM2M0NjMwNzgtZDI0Zi00ZmE0LWE4NGMtYjVjMDMxMGI1MTIxIiwiY2xpZW50X2lkIjoiM2ZkbjdjdmtrM24zbW1ibTN2aWRtcjZ2Y2UifQ.P7MviYpWK6PW02-A3GQGAZIKbx-QqDMFTmoOsI16h21ei1lXVhQom-4TNJra7OfnYVFm35eSMeM7T9SCr4hMBXnDs3u3oN_PhXUKj-skEWfbEX55btroodlgimCR3n46FeQc-iBqtvQjjX8A3DW8wzqLBSk4mG9TyK-GTnDOGVacqVZO66wAF7ZhvXHa8ABEjo4sslu2aUGMOjPySPYeLM6qkRwR-n7mlJ33PqaxA3tqgNiwB-cKuFTDpis4YC3bp73jb_HSfe-ZpGDn-djsZ0nUY8BeU7ks2t8RRo07uk9vAVWLWwEHmUotHeq72PfCGb5pdOvvAVbLMTxPJoDyMw
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 2807
+3 &gt; Host: api.redebanvd.net
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;commerceId&quot;:2012202301,&quot;terminalId&quot;:&quot;LEAL2022&quot;,&quot;techVersion&quot;:&quot;V-T35T&quot;,&quot;atmId&quot;:&quot;222491aBcD&quot;},&quot;transaction&quot;:{&quot;approvalNum&quot;:731067,&quot;responseCode&quot;:&quot;12&quot;,&quot;status&quot;:&quot;05&quot;,&quot;date&quot;:&quot;20240126&quot;,&quot;hour&quot;:&quot;1044&quot;,&quot;authMode&quot;:&quot;01&quot;,&quot;inMode&quot;:&quot;03X&quot;,&quot;receipt&quot;:731067,&quot;rrn&quot;:731067,&quot;dateTime&quot;:&quot;20240126104400&quot;,&quot;transactionType&quot;:&quot;LEALTADPLUS&quot;},&quot;paymentMethod&quot;:{&quot;franchise&quot;:&quot;MAESTRO&quot;,&quot;millerNum&quot;:&quot;54848948948&quot;,&quot;card&quot;:&quot;56611963****8712&quot;,&quot;accountType&quot;:&quot;LT&quot;},&quot;payment&quot;:{&quot;taxBase&quot;:731067,&quot;incAmount&quot;:&quot;0&quot;,&quot;ivaAmount&quot;:&quot;0&quot;,&quot;tipAmount&quot;:&quot;0&quot;,&quot;fullAmount&quot;:731067},&quot;script&quot;:&quot;[0X0A][0X1C][0X2C][0X3B]p&amp;r%u\/e@b*ap&amp;r%u\/e@b*a[0X0A][0X1C][0X2C][0X3B]CR 20 33 - 15 [0X0A][0X1A][0X2A][0X3A]C.UNICO:112121212121 [0X1B]TER:LEAL0041[0X0A][0X1A]MASTERCARD[0X1C]EXP:2710 CUO:2[0X1B]CR[0X0A][0X1A]528209**5461[0X1C]RECIBO:000034[0X1B]RRN:000955[0X0A][0X1C]ARQC:7110DDB67A6B1AB0[0X0A][0X1C]AID:A0000000041010[0X0A][0X1C]AP LABEL:Mastercard[0X0A] [0X0A][0X1A]VENTA[0X1B]APRO:HOME01[0X0A][0X1A]COMPRA NETA:[0X1B]$ 46.463[0X0A][0X1A]IVA:[0X1B]$ 330[0X0A][0X1A]INC:[0X1B]$ 440[0X0A][0X1A]PROPINA:[0X1B]$ 23.323[0X0A][0X3C][0X1A]TOTAL:[0X1B]$ 438.786[0X0A]&quot;,&quot;signature&quot;:{&quot;signatureFlag&quot;:true,&quot;signature&quot;:&quot;424D3E0F(12)3E(6)28(6)2C01(4)6(8)10001(56)B1{6}01{75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){41}E0{32}(5){40}8000{31}(5){39}000E01{30}(5){37}C003FFE01{29}(5){36}E007{4}C01{28}(5){36}C1{7}C03{27}(5){36}8{9}C07{26}(5){36}9{10}80{26}(5){36}9{11}01{25}(5){36}9{11}E03{24}(5){36}1{12}C07{23}(5){36}3{13}80{23}(5){35}E3{14}01{22}(5){35}E7{14}E03{21}(5){35}C7{15}C03{20}(5){35}C{17}807{19}(5){35}C{18}80{19}(5){35}C{19}00{18}(5){35}C{19}E03{17}(5){35}8{20}E3{17}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{17}3{21}(5){35}9{17}3{21}(5){35}9{16}E3{21}(5){35}8{16}E7{21}(5){35}C{16}C7{21}(5){35}C{16}8{22}(5){35}C{16}9{22}(5){35}C{16}1{22}(5){35}C{16}3{22}(5){35}C{15}E3{22}(5){35}C{15}E7{22}(5){35}C7{14}C7{22}(5){35}E7FFF03{9}C{23}(5){35}E7F0003{9}8{23}(5){34}E(5)7{10}1{23}(5){30}C(7)7{11}E3{23}(5){27}E(7)F3{13}E7{23}(5){26}80001{5}3{13}C7{23}(5){25}000{8}3{13}C{24}(5){10}9{12}E003{9}1{13}C{24}(5){10}9{11}8007{10}9{13}8{24}(5){10}8{10}000{12}9{12}E1{24}(5){10}C{8}E003{13}9{12}C3{24}(5){10}C7{6}8007{14}8{12}8{25}(5){10}E3{5}000{16}C{12}1{25}(5){11}3FFFE003{17}C7{10}C3{25}(5){11}1FF8007{18}E7{10}87{25}(5){11}9F000{20}E3{9}E1{26}(5){11}8003{22}3{9}C3{26}(5){11}C07{23}1{9}0{27}(5){11}C{25}9{8}C1{27}(5){37}8{8}87{27}(5){37}C{7}E1{28}(5){37}C7{6}03{28}(5){37}E3{5}00{29}(5){38}3FFFC007{29}(5){38}03F8007{30}(5){38}80001{32}(5){39}803{33}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5)&quot;},&quot;notification&quot;:{&quot;notificationFlag&quot;:true,&quot;cellphone&quot;:&quot;3177928280&quot;,&quot;notificationType&quot;:1}}]}
+
+10:44:21.207 response time in milliseconds: 289
+3 &lt; 200
+3 &lt; Content-Type: application/json
+3 &lt; Content-Length: 773
+3 &lt; Connection: keep-alive
+3 &lt; Date: Fri, 26 Jan 2024 15:44:22 GMT
+3 &lt; x-amzn-RequestId: cdd45873-c262-41f6-b98c-e36e14a49253
+3 &lt; x-amz-apigw-id: SJ31hHC_IAMEC9Q=
+3 &lt; X-Amzn-Trace-Id: Root=1-65b3d356-77953e54340bf5bd6a597d9f
+3 &lt; X-Cache: Miss from cloudfront
+3 &lt; Via: 1.1 cb0edd87c0785dfd332928914ca3d91c.cloudfront.net (CloudFront)
+3 &lt; X-Amz-Cf-Pop: MIA3-C5
+3 &lt; X-Amz-Cf-Id: C26Awh11HTTC0NmLhTCuugfClM6OOTpPDkjjGEOIEUkUGhEuoKkB7w==
+{&quot;resultObject&quot;:[{&quot;commerce&quot;:{&quot;commerceId&quot;:&quot;2012202301&quot;,&quot;terminalId&quot;:&quot;LEAL2022&quot;,&quot;techVersion&quot;:&quot;V-T35T&quot;,&quot;atmId&quot;:&quot;222491aBcD&quot;},&quot;transaction&quot;:{&quot;voucherId&quot;:&quot;LEAL202273106773106720240126104405&quot;,&quot;approvalNum&quot;:&quot;731067&quot;,&quot;responseCode&quot;:&quot;12&quot;,&quot;status&quot;:&quot;05&quot;,&quot;date&quot;:&quot;2024-01-26&quot;,&quot;hour&quot;:&quot;10:44:00&quot;,&quot;authMode&quot;:&quot;01&quot;,&quot;inMode&quot;:&quot;03X&quot;,&quot;receipt&quot;:&quot;731067&quot;,&quot;rrn&quot;:&quot;731067&quot;,&quot;dateTime&quot;:&quot;2024-01-26T10:44:00&quot;,&quot;transactionType&quot;:&quot;LEALTADPLUS&quot;},&quot;paymentMethod&quot;:{&quot;franchise&quot;:&quot;MAESTRO&quot;,&quot;millerNum&quot;:&quot;54848948948&quot;,&quot;card&quot;:&quot;56611963****8712&quot;,&quot;accountType&quot;:&quot;LT&quot;},&quot;payment&quot;:{&quot;taxBase&quot;:&quot;731067&quot;,&quot;incAmount&quot;:&quot;0&quot;,&quot;ivaAmount&quot;:&quot;0&quot;,&quot;tipAmount&quot;:&quot;0&quot;,&quot;fullAmount&quot;:&quot;731067&quot;}}],&quot;status&quot;:[{&quot;transactionId&quot;:&quot;LEAL202273106773106720240126104405&quot;,&quot;statusCode&quot;:&quot;00&quot;,&quot;statusDescription&quot;:&quot;PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240126104422&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.status[0].statusDescription == &#39;PROCESSED&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.resultObject[0].transaction.status == &#39;05&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>eval sleep(700)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">711</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path pathUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header x-api-key = apiKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].transaction.status = &#39;02&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].paymentMethod.accountType = &quot;LT&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].paymentMethod.franchise = &quot;MAESTRO&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].transaction.transactionType = &quot;LEALTADPLUS&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">249</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.59">10:44:21.928 request:
+4 &gt; POST https://api.redebanvd.net/transactional/api/vouchers/transactions
+4 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
+4 &gt; Authorization: Bearer eyJraWQiOiJEK1lFdFlkdDdPeDUrU3prUWhoNDI0RnpId3dhQ3hNYlwvUng4YWUxTnZRYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzZmRuN2N2a2szbjNtbWJtM3ZpZG1yNnZjZSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA2MjgzODU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV85dWM0ZGlWeloiLCJleHAiOjE3MDYyODU2NTksImlhdCI6MTcwNjI4Mzg1OSwidmVyc2lvbiI6MiwianRpIjoiM2M0NjMwNzgtZDI0Zi00ZmE0LWE4NGMtYjVjMDMxMGI1MTIxIiwiY2xpZW50X2lkIjoiM2ZkbjdjdmtrM24zbW1ibTN2aWRtcjZ2Y2UifQ.P7MviYpWK6PW02-A3GQGAZIKbx-QqDMFTmoOsI16h21ei1lXVhQom-4TNJra7OfnYVFm35eSMeM7T9SCr4hMBXnDs3u3oN_PhXUKj-skEWfbEX55btroodlgimCR3n46FeQc-iBqtvQjjX8A3DW8wzqLBSk4mG9TyK-GTnDOGVacqVZO66wAF7ZhvXHa8ABEjo4sslu2aUGMOjPySPYeLM6qkRwR-n7mlJ33PqaxA3tqgNiwB-cKuFTDpis4YC3bp73jb_HSfe-ZpGDn-djsZ0nUY8BeU7ks2t8RRo07uk9vAVWLWwEHmUotHeq72PfCGb5pdOvvAVbLMTxPJoDyMw
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Content-Length: 2807
+4 &gt; Host: api.redebanvd.net
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;commerceId&quot;:2012202301,&quot;terminalId&quot;:&quot;LEAL2022&quot;,&quot;techVersion&quot;:&quot;V-T35T&quot;,&quot;atmId&quot;:&quot;222491aBcD&quot;},&quot;transaction&quot;:{&quot;approvalNum&quot;:731067,&quot;responseCode&quot;:&quot;12&quot;,&quot;status&quot;:&quot;02&quot;,&quot;date&quot;:&quot;20240126&quot;,&quot;hour&quot;:&quot;1044&quot;,&quot;authMode&quot;:&quot;01&quot;,&quot;inMode&quot;:&quot;03X&quot;,&quot;receipt&quot;:731067,&quot;rrn&quot;:731067,&quot;dateTime&quot;:&quot;20240126104400&quot;,&quot;transactionType&quot;:&quot;LEALTADPLUS&quot;},&quot;paymentMethod&quot;:{&quot;franchise&quot;:&quot;MAESTRO&quot;,&quot;millerNum&quot;:&quot;54848948948&quot;,&quot;card&quot;:&quot;56611963****8712&quot;,&quot;accountType&quot;:&quot;LT&quot;},&quot;payment&quot;:{&quot;taxBase&quot;:731067,&quot;incAmount&quot;:&quot;0&quot;,&quot;ivaAmount&quot;:&quot;0&quot;,&quot;tipAmount&quot;:&quot;0&quot;,&quot;fullAmount&quot;:731067},&quot;script&quot;:&quot;[0X0A][0X1C][0X2C][0X3B]p&amp;r%u\/e@b*ap&amp;r%u\/e@b*a[0X0A][0X1C][0X2C][0X3B]CR 20 33 - 15 [0X0A][0X1A][0X2A][0X3A]C.UNICO:112121212121 [0X1B]TER:LEAL0041[0X0A][0X1A]MASTERCARD[0X1C]EXP:2710 CUO:2[0X1B]CR[0X0A][0X1A]528209**5461[0X1C]RECIBO:000034[0X1B]RRN:000955[0X0A][0X1C]ARQC:7110DDB67A6B1AB0[0X0A][0X1C]AID:A0000000041010[0X0A][0X1C]AP LABEL:Mastercard[0X0A] [0X0A][0X1A]VENTA[0X1B]APRO:HOME01[0X0A][0X1A]COMPRA NETA:[0X1B]$ 46.463[0X0A][0X1A]IVA:[0X1B]$ 330[0X0A][0X1A]INC:[0X1B]$ 440[0X0A][0X1A]PROPINA:[0X1B]$ 23.323[0X0A][0X3C][0X1A]TOTAL:[0X1B]$ 438.786[0X0A]&quot;,&quot;signature&quot;:{&quot;signatureFlag&quot;:true,&quot;signature&quot;:&quot;424D3E0F(12)3E(6)28(6)2C01(4)6(8)10001(56)B1{6}01{75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){41}E0{32}(5){40}8000{31}(5){39}000E01{30}(5){37}C003FFE01{29}(5){36}E007{4}C01{28}(5){36}C1{7}C03{27}(5){36}8{9}C07{26}(5){36}9{10}80{26}(5){36}9{11}01{25}(5){36}9{11}E03{24}(5){36}1{12}C07{23}(5){36}3{13}80{23}(5){35}E3{14}01{22}(5){35}E7{14}E03{21}(5){35}C7{15}C03{20}(5){35}C{17}807{19}(5){35}C{18}80{19}(5){35}C{19}00{18}(5){35}C{19}E03{17}(5){35}8{20}E3{17}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{17}3{21}(5){35}9{17}3{21}(5){35}9{16}E3{21}(5){35}8{16}E7{21}(5){35}C{16}C7{21}(5){35}C{16}8{22}(5){35}C{16}9{22}(5){35}C{16}1{22}(5){35}C{16}3{22}(5){35}C{15}E3{22}(5){35}C{15}E7{22}(5){35}C7{14}C7{22}(5){35}E7FFF03{9}C{23}(5){35}E7F0003{9}8{23}(5){34}E(5)7{10}1{23}(5){30}C(7)7{11}E3{23}(5){27}E(7)F3{13}E7{23}(5){26}80001{5}3{13}C7{23}(5){25}000{8}3{13}C{24}(5){10}9{12}E003{9}1{13}C{24}(5){10}9{11}8007{10}9{13}8{24}(5){10}8{10}000{12}9{12}E1{24}(5){10}C{8}E003{13}9{12}C3{24}(5){10}C7{6}8007{14}8{12}8{25}(5){10}E3{5}000{16}C{12}1{25}(5){11}3FFFE003{17}C7{10}C3{25}(5){11}1FF8007{18}E7{10}87{25}(5){11}9F000{20}E3{9}E1{26}(5){11}8003{22}3{9}C3{26}(5){11}C07{23}1{9}0{27}(5){11}C{25}9{8}C1{27}(5){37}8{8}87{27}(5){37}C{7}E1{28}(5){37}C7{6}03{28}(5){37}E3{5}00{29}(5){38}3FFFC007{29}(5){38}03F8007{30}(5){38}80001{32}(5){39}803{33}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5)&quot;},&quot;notification&quot;:{&quot;notificationFlag&quot;:true,&quot;cellphone&quot;:&quot;3177928280&quot;,&quot;notificationType&quot;:1}}]}
+
+10:44:22.174 response time in milliseconds: 246
+4 &lt; 200
+4 &lt; Content-Type: application/json
+4 &lt; Content-Length: 773
+4 &lt; Connection: keep-alive
+4 &lt; Date: Fri, 26 Jan 2024 15:44:23 GMT
+4 &lt; x-amzn-RequestId: a1bd6990-27f6-4da0-b1d0-09cb0dba4cf0
+4 &lt; x-amz-apigw-id: SJ31rG8uIAMEjVQ=
+4 &lt; X-Amzn-Trace-Id: Root=1-65b3d357-20740a7a272de90545a459a7
+4 &lt; X-Cache: Miss from cloudfront
+4 &lt; Via: 1.1 83e0cde0838dfbbd5f585d5a8b60be2e.cloudfront.net (CloudFront)
+4 &lt; X-Amz-Cf-Pop: MIA3-C5
+4 &lt; X-Amz-Cf-Id: lNfDedv-p5dJ2TQWWWxXqvSsqZJxOMcbDRuFTFt9ajSKTvATtW0guQ==
+{&quot;resultObject&quot;:[{&quot;commerce&quot;:{&quot;commerceId&quot;:&quot;2012202301&quot;,&quot;terminalId&quot;:&quot;LEAL2022&quot;,&quot;techVersion&quot;:&quot;V-T35T&quot;,&quot;atmId&quot;:&quot;222491aBcD&quot;},&quot;transaction&quot;:{&quot;voucherId&quot;:&quot;LEAL202273106773106720240126104402&quot;,&quot;approvalNum&quot;:&quot;731067&quot;,&quot;responseCode&quot;:&quot;12&quot;,&quot;status&quot;:&quot;02&quot;,&quot;date&quot;:&quot;2024-01-26&quot;,&quot;hour&quot;:&quot;10:44:00&quot;,&quot;authMode&quot;:&quot;01&quot;,&quot;inMode&quot;:&quot;03X&quot;,&quot;receipt&quot;:&quot;731067&quot;,&quot;rrn&quot;:&quot;731067&quot;,&quot;dateTime&quot;:&quot;2024-01-26T10:44:00&quot;,&quot;transactionType&quot;:&quot;LEALTADPLUS&quot;},&quot;paymentMethod&quot;:{&quot;franchise&quot;:&quot;MAESTRO&quot;,&quot;millerNum&quot;:&quot;54848948948&quot;,&quot;card&quot;:&quot;56611963****8712&quot;,&quot;accountType&quot;:&quot;LT&quot;},&quot;payment&quot;:{&quot;taxBase&quot;:&quot;731067&quot;,&quot;incAmount&quot;:&quot;0&quot;,&quot;ivaAmount&quot;:&quot;0&quot;,&quot;tipAmount&quot;:&quot;0&quot;,&quot;fullAmount&quot;:&quot;731067&quot;}}],&quot;status&quot;:[{&quot;transactionId&quot;:&quot;LEAL202273106773106720240126104402&quot;,&quot;statusCode&quot;:&quot;00&quot;,&quot;statusDescription&quot;:&quot;PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240126104423&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.status[0].statusDescription == &#39;PROCESSED&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.resultObject[0].transaction.status == &#39;02&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>eval sleep(700)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">706</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path pathUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header x-api-key = apiKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].transaction.status = &#39;05&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].paymentMethod.accountType = &quot;LT&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].paymentMethod.franchise = &quot;MAESTRO&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].transaction.transactionType = &quot;LEALTADPLUS&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">275</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.73">10:44:22.887 request:
+5 &gt; POST https://api.redebanvd.net/transactional/api/vouchers/transactions
+5 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
+5 &gt; Authorization: Bearer eyJraWQiOiJEK1lFdFlkdDdPeDUrU3prUWhoNDI0RnpId3dhQ3hNYlwvUng4YWUxTnZRYz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIzZmRuN2N2a2szbjNtbWJtM3ZpZG1yNnZjZSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA2MjgzODU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV85dWM0ZGlWeloiLCJleHAiOjE3MDYyODU2NTksImlhdCI6MTcwNjI4Mzg1OSwidmVyc2lvbiI6MiwianRpIjoiM2M0NjMwNzgtZDI0Zi00ZmE0LWE4NGMtYjVjMDMxMGI1MTIxIiwiY2xpZW50X2lkIjoiM2ZkbjdjdmtrM24zbW1ibTN2aWRtcjZ2Y2UifQ.P7MviYpWK6PW02-A3GQGAZIKbx-QqDMFTmoOsI16h21ei1lXVhQom-4TNJra7OfnYVFm35eSMeM7T9SCr4hMBXnDs3u3oN_PhXUKj-skEWfbEX55btroodlgimCR3n46FeQc-iBqtvQjjX8A3DW8wzqLBSk4mG9TyK-GTnDOGVacqVZO66wAF7ZhvXHa8ABEjo4sslu2aUGMOjPySPYeLM6qkRwR-n7mlJ33PqaxA3tqgNiwB-cKuFTDpis4YC3bp73jb_HSfe-ZpGDn-djsZ0nUY8BeU7ks2t8RRo07uk9vAVWLWwEHmUotHeq72PfCGb5pdOvvAVbLMTxPJoDyMw
+5 &gt; Content-Type: application/json; charset=UTF-8
+5 &gt; Content-Length: 2807
+5 &gt; Host: api.redebanvd.net
+5 &gt; Connection: Keep-Alive
+5 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+5 &gt; Accept-Encoding: gzip,deflate
+{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;commerceId&quot;:2012202301,&quot;terminalId&quot;:&quot;LEAL2022&quot;,&quot;techVersion&quot;:&quot;V-T35T&quot;,&quot;atmId&quot;:&quot;222491aBcD&quot;},&quot;transaction&quot;:{&quot;approvalNum&quot;:731067,&quot;responseCode&quot;:&quot;12&quot;,&quot;status&quot;:&quot;05&quot;,&quot;date&quot;:&quot;20240126&quot;,&quot;hour&quot;:&quot;1044&quot;,&quot;authMode&quot;:&quot;01&quot;,&quot;inMode&quot;:&quot;03X&quot;,&quot;receipt&quot;:731067,&quot;rrn&quot;:731067,&quot;dateTime&quot;:&quot;20240126104400&quot;,&quot;transactionType&quot;:&quot;LEALTADPLUS&quot;},&quot;paymentMethod&quot;:{&quot;franchise&quot;:&quot;MAESTRO&quot;,&quot;millerNum&quot;:&quot;54848948948&quot;,&quot;card&quot;:&quot;56611963****8712&quot;,&quot;accountType&quot;:&quot;LT&quot;},&quot;payment&quot;:{&quot;taxBase&quot;:731067,&quot;incAmount&quot;:&quot;0&quot;,&quot;ivaAmount&quot;:&quot;0&quot;,&quot;tipAmount&quot;:&quot;0&quot;,&quot;fullAmount&quot;:731067},&quot;script&quot;:&quot;[0X0A][0X1C][0X2C][0X3B]p&amp;r%u\/e@b*ap&amp;r%u\/e@b*a[0X0A][0X1C][0X2C][0X3B]CR 20 33 - 15 [0X0A][0X1A][0X2A][0X3A]C.UNICO:112121212121 [0X1B]TER:LEAL0041[0X0A][0X1A]MASTERCARD[0X1C]EXP:2710 CUO:2[0X1B]CR[0X0A][0X1A]528209**5461[0X1C]RECIBO:000034[0X1B]RRN:000955[0X0A][0X1C]ARQC:7110DDB67A6B1AB0[0X0A][0X1C]AID:A0000000041010[0X0A][0X1C]AP LABEL:Mastercard[0X0A] [0X0A][0X1A]VENTA[0X1B]APRO:HOME01[0X0A][0X1A]COMPRA NETA:[0X1B]$ 46.463[0X0A][0X1A]IVA:[0X1B]$ 330[0X0A][0X1A]INC:[0X1B]$ 440[0X0A][0X1A]PROPINA:[0X1B]$ 23.323[0X0A][0X3C][0X1A]TOTAL:[0X1B]$ 438.786[0X0A]&quot;,&quot;signature&quot;:{&quot;signatureFlag&quot;:true,&quot;signature&quot;:&quot;424D3E0F(12)3E(6)28(6)2C01(4)6(8)10001(56)B1{6}01{75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){41}E0{32}(5){40}8000{31}(5){39}000E01{30}(5){37}C003FFE01{29}(5){36}E007{4}C01{28}(5){36}C1{7}C03{27}(5){36}8{9}C07{26}(5){36}9{10}80{26}(5){36}9{11}01{25}(5){36}9{11}E03{24}(5){36}1{12}C07{23}(5){36}3{13}80{23}(5){35}E3{14}01{22}(5){35}E7{14}E03{21}(5){35}C7{15}C03{20}(5){35}C{17}807{19}(5){35}C{18}80{19}(5){35}C{19}00{18}(5){35}C{19}E03{17}(5){35}8{20}E3{17}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{17}3{21}(5){35}9{17}3{21}(5){35}9{16}E3{21}(5){35}8{16}E7{21}(5){35}C{16}C7{21}(5){35}C{16}8{22}(5){35}C{16}9{22}(5){35}C{16}1{22}(5){35}C{16}3{22}(5){35}C{15}E3{22}(5){35}C{15}E7{22}(5){35}C7{14}C7{22}(5){35}E7FFF03{9}C{23}(5){35}E7F0003{9}8{23}(5){34}E(5)7{10}1{23}(5){30}C(7)7{11}E3{23}(5){27}E(7)F3{13}E7{23}(5){26}80001{5}3{13}C7{23}(5){25}000{8}3{13}C{24}(5){10}9{12}E003{9}1{13}C{24}(5){10}9{11}8007{10}9{13}8{24}(5){10}8{10}000{12}9{12}E1{24}(5){10}C{8}E003{13}9{12}C3{24}(5){10}C7{6}8007{14}8{12}8{25}(5){10}E3{5}000{16}C{12}1{25}(5){11}3FFFE003{17}C7{10}C3{25}(5){11}1FF8007{18}E7{10}87{25}(5){11}9F000{20}E3{9}E1{26}(5){11}8003{22}3{9}C3{26}(5){11}C07{23}1{9}0{27}(5){11}C{25}9{8}C1{27}(5){37}8{8}87{27}(5){37}C{7}E1{28}(5){37}C7{6}03{28}(5){37}E3{5}00{29}(5){38}3FFFC007{29}(5){38}03F8007{30}(5){38}80001{32}(5){39}803{33}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5)&quot;},&quot;notification&quot;:{&quot;notificationFlag&quot;:true,&quot;cellphone&quot;:&quot;3177928280&quot;,&quot;notificationType&quot;:1}}]}
+
+10:44:23.160 response time in milliseconds: 273
+5 &lt; 200
+5 &lt; Content-Type: application/json
+5 &lt; Content-Length: 773
+5 &lt; Connection: keep-alive
+5 &lt; Date: Fri, 26 Jan 2024 15:44:24 GMT
+5 &lt; x-amzn-RequestId: 92e8e218-8c0d-4574-ad4a-213aa3ecaf11
+5 &lt; x-amz-apigw-id: SJ311EFrIAMEaww=
+5 &lt; X-Amzn-Trace-Id: Root=1-65b3d358-4141d9bd01f702f9003c4103
+5 &lt; X-Cache: Miss from cloudfront
+5 &lt; Via: 1.1 4b6fe71895284848be1dfbfa1aef98b6.cloudfront.net (CloudFront)
+5 &lt; X-Amz-Cf-Pop: MIA3-C5
+5 &lt; X-Amz-Cf-Id: r_wPWQK1kXf3uctJBd1IJ9Z_F73EaJzqnKEpYP3H0kQPEr6FKP0jHg==
+{&quot;resultObject&quot;:[{&quot;commerce&quot;:{&quot;commerceId&quot;:&quot;2012202301&quot;,&quot;terminalId&quot;:&quot;LEAL2022&quot;,&quot;techVersion&quot;:&quot;V-T35T&quot;,&quot;atmId&quot;:&quot;222491aBcD&quot;},&quot;transaction&quot;:{&quot;voucherId&quot;:&quot;LEAL202273106773106720240126104405&quot;,&quot;approvalNum&quot;:&quot;731067&quot;,&quot;responseCode&quot;:&quot;12&quot;,&quot;status&quot;:&quot;05&quot;,&quot;date&quot;:&quot;2024-01-26&quot;,&quot;hour&quot;:&quot;10:44:00&quot;,&quot;authMode&quot;:&quot;01&quot;,&quot;inMode&quot;:&quot;03X&quot;,&quot;receipt&quot;:&quot;731067&quot;,&quot;rrn&quot;:&quot;731067&quot;,&quot;dateTime&quot;:&quot;2024-01-26T10:44:00&quot;,&quot;transactionType&quot;:&quot;LEALTADPLUS&quot;},&quot;paymentMethod&quot;:{&quot;franchise&quot;:&quot;MAESTRO&quot;,&quot;millerNum&quot;:&quot;54848948948&quot;,&quot;card&quot;:&quot;56611963****8712&quot;,&quot;accountType&quot;:&quot;LT&quot;},&quot;payment&quot;:{&quot;taxBase&quot;:&quot;731067&quot;,&quot;incAmount&quot;:&quot;0&quot;,&quot;ivaAmount&quot;:&quot;0&quot;,&quot;tipAmount&quot;:&quot;0&quot;,&quot;fullAmount&quot;:&quot;731067&quot;}}],&quot;status&quot;:[{&quot;transactionId&quot;:&quot;LEAL202273106773106720240126104405&quot;,&quot;statusCode&quot;:&quot;00&quot;,&quot;statusDescription&quot;:&quot;PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240126104424&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.status[0].statusDescription == &#39;PROCESSED&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.resultObject[0].transaction.status == &#39;05&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

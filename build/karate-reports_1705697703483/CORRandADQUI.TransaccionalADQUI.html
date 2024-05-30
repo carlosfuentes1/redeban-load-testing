@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>CORRandADQUI.TransaccionalADQUI</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-01-19 03:54:20 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:52]"><span>[1.1:52]</span> <span>peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">CORRandADQUI/TransaccionalADQUI.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Ejecutar Endpoint para crear una transaccion aprobada con firma y validando distintos datos de respuesta</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:52]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:52]</span>
+                <span class="scenario-name">peticion Post que obtiene el token de cognito y luego lo pasa al header de la peticion de aprobacion con firma</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1280</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:52]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyTrx = read(&#39;classpath:payloads/BodyTrxAdquirencia.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">36</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">15:54:18.945 &lt;&lt; lock released, cached callSingle: classpath:helper/CrearToken.feature
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helper.CrearToken</div>
+      </div>
+      <div class="time-cell passed">1586</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4.0.call.0.4">15:54:17.217 karate.env system property was: dev-corr 
+15:54:17.232 &gt;&gt; lock acquired, begin callSingle: classpath:helper/CrearToken.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/x-www-form-urlencoded&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = tokenAuthorization</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request &#39;grant_type=client_credentials&amp;Scope=consumers%2Ffabrica&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1570</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4.0.call.0.8">15:54:17.816 request:
+1 &gt; POST https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com/oauth2/token
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Authorization: Basic NnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGw6MW5uNjVnOXA1bHY5cnZubHYwdTljNm52cnMzM2hramluNWVrNDNyNTJyYmcwaDhxdmhjMQ==
+1 &gt; Content-Length: 55
+1 &gt; Host: voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
+
+15:54:18.878 response time in milliseconds: 1048
+1 &lt; 200
+1 &lt; Date: Fri, 19 Jan 2024 20:54:19 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy-Report-Only: script-src https://d3oia8etllorh5.cloudfront.net https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com; style-src https://d3oia8etllorh5.cloudfront.net https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com; img-src https://d3oia8etllorh5.cloudfront.net https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com; report-uri https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com/cspreport
+1 &lt; x-amz-cognito-request-id: 562fc1bd-3151-4551-bd58-369c883aeb9b
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Server: Server
+1 &lt; Set-Cookie: XSRF-TOKEN=711b76be-f3e2-49da-a98d-34a7fc47bea9; Domain=voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com; Secure
+{&quot;access_token&quot;:&quot;eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA1Njk3NjU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDU2OTk0NTksImlhdCI6MTcwNTY5NzY1OSwidmVyc2lvbiI6MiwianRpIjoiZTc5NjlkMzUtMDAxYS00ODg4LThlMTItMDljMjE0MzI0OGUzIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.OzSMw7jei2oQwLs2dMCzUD_uOmjJTcBc6POm7ymuW5wnVpA9UBhcBD2LmopZZoYoMm9SmjLB6HtsxXzGBfTQmWdJhvQuFZ-uxz8-33F5hkdvJBV9vQNLOm6o-pheo9VO7DfUU8YY2O_FNXuAJbCt8JCh6S7fQUscHHR895GNsCDaut6mi_G0noyQkUOOXIIKWXOzCM1SbAhZSCsDdsytq2HNM2c7UXxlIrlxq01XD0oj2iYvlWyzY5-KxwOGj81ydFeWn7fNzZtfWNRW2biIex30F1DzzuTYtjRCKQg6Cqg4k9IMmrS7s2jNA6tbaCNWOjIQSTavuTDxQSSuMS539g&quot;,&quot;expires_in&quot;:1800,&quot;token_type&quot;:&quot;Bearer&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def access_token = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseTimeRange = { min: 10, max: 15000 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helper.DataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def NumReceipt = dataGenerator.getRandomNumReceipt()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">51</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.receipt = NumReceipt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].payment.fullAmount = NumReceipt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].payment.taxBase = NumReceipt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.rrn = NumReceipt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].paymentMethod.card = dataGenerator.getRandomValueCard()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].commerce.atmId = dataGenerator.getRandomValueCajero()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.rrn = NumReceipt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.approvalNum = NumReceipt</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dateTimes = karate.call(&#39;classpath:helper/dateTime.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">559</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.dateTime = dateTimes.date</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref bg-step">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.hour = dateTimes.hora</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref bg-step">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.date = dateTimes.dia</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def sleep = function(pause){ java.lang.Thread.sleep(pause)}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path pathUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header x-api-key = apiKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].transaction.status = &#39;00&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].paymentMethod.accountType = &quot;AH&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].paymentMethod.franchise = &quot;AMEX&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].transaction.transactionType = &quot;VENTA&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">562</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.31">15:54:19.673 request:
+2 &gt; POST https://apicorr.redebanvd.net/transactional/api/vouchers/transactions
+2 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
+2 &gt; Authorization: Bearer eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA1Njk3NjU5LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDU2OTk0NTksImlhdCI6MTcwNTY5NzY1OSwidmVyc2lvbiI6MiwianRpIjoiZTc5NjlkMzUtMDAxYS00ODg4LThlMTItMDljMjE0MzI0OGUzIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.OzSMw7jei2oQwLs2dMCzUD_uOmjJTcBc6POm7ymuW5wnVpA9UBhcBD2LmopZZoYoMm9SmjLB6HtsxXzGBfTQmWdJhvQuFZ-uxz8-33F5hkdvJBV9vQNLOm6o-pheo9VO7DfUU8YY2O_FNXuAJbCt8JCh6S7fQUscHHR895GNsCDaut6mi_G0noyQkUOOXIIKWXOzCM1SbAhZSCsDdsytq2HNM2c7UXxlIrlxq01XD0oj2iYvlWyzY5-KxwOGj81ydFeWn7fNzZtfWNRW2biIex30F1DzzuTYtjRCKQg6Cqg4k9IMmrS7s2jNA6tbaCNWOjIQSTavuTDxQSSuMS539g
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 2798
+2 &gt; Host: apicorr.redebanvd.net
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;commerceId&quot;:2012202301,&quot;terminalId&quot;:&quot;LEAL2022&quot;,&quot;techVersion&quot;:&quot;V-T35T&quot;,&quot;atmId&quot;:&quot;955727aBcD&quot;},&quot;transaction&quot;:{&quot;approvalNum&quot;:907262,&quot;responseCode&quot;:&quot;12&quot;,&quot;status&quot;:&quot;00&quot;,&quot;date&quot;:&quot;20240119&quot;,&quot;hour&quot;:&quot;1554&quot;,&quot;authMode&quot;:&quot;01&quot;,&quot;inMode&quot;:&quot;03X&quot;,&quot;receipt&quot;:907262,&quot;rrn&quot;:907262,&quot;dateTime&quot;:&quot;20240119155400&quot;,&quot;transactionType&quot;:&quot;VENTA&quot;},&quot;paymentMethod&quot;:{&quot;franchise&quot;:&quot;AMEX&quot;,&quot;millerNum&quot;:&quot;54848948948&quot;,&quot;card&quot;:&quot;78353416****8601&quot;,&quot;accountType&quot;:&quot;AH&quot;},&quot;payment&quot;:{&quot;taxBase&quot;:907262,&quot;incAmount&quot;:&quot;0&quot;,&quot;ivaAmount&quot;:&quot;0&quot;,&quot;tipAmount&quot;:&quot;0&quot;,&quot;fullAmount&quot;:907262},&quot;script&quot;:&quot;[0X0A][0X1C][0X2C][0X3B]p&amp;r%u\/e@b*ap&amp;r%u\/e@b*a[0X0A][0X1C][0X2C][0X3B]CR 20 33 - 15 [0X0A][0X1A][0X2A][0X3A]C.UNICO:112121212121 [0X1B]TER:LEAL0041[0X0A][0X1A]MASTERCARD[0X1C]EXP:2710 CUO:2[0X1B]CR[0X0A][0X1A]528209**5461[0X1C]RECIBO:000034[0X1B]RRN:000955[0X0A][0X1C]ARQC:7110DDB67A6B1AB0[0X0A][0X1C]AID:A0000000041010[0X0A][0X1C]AP LABEL:Mastercard[0X0A] [0X0A][0X1A]VENTA[0X1B]APRO:HOME01[0X0A][0X1A]COMPRA NETA:[0X1B]$ 46.463[0X0A][0X1A]IVA:[0X1B]$ 330[0X0A][0X1A]INC:[0X1B]$ 440[0X0A][0X1A]PROPINA:[0X1B]$ 23.323[0X0A][0X3C][0X1A]TOTAL:[0X1B]$ 438.786[0X0A]&quot;,&quot;signature&quot;:{&quot;signatureFlag&quot;:true,&quot;signature&quot;:&quot;424D3E0F(12)3E(6)28(6)2C01(4)6(8)10001(56)B1{6}01{75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){41}E0{32}(5){40}8000{31}(5){39}000E01{30}(5){37}C003FFE01{29}(5){36}E007{4}C01{28}(5){36}C1{7}C03{27}(5){36}8{9}C07{26}(5){36}9{10}80{26}(5){36}9{11}01{25}(5){36}9{11}E03{24}(5){36}1{12}C07{23}(5){36}3{13}80{23}(5){35}E3{14}01{22}(5){35}E7{14}E03{21}(5){35}C7{15}C03{20}(5){35}C{17}807{19}(5){35}C{18}80{19}(5){35}C{19}00{18}(5){35}C{19}E03{17}(5){35}8{20}E3{17}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{39}(5){35}9{17}3{21}(5){35}9{17}3{21}(5){35}9{16}E3{21}(5){35}8{16}E7{21}(5){35}C{16}C7{21}(5){35}C{16}8{22}(5){35}C{16}9{22}(5){35}C{16}1{22}(5){35}C{16}3{22}(5){35}C{15}E3{22}(5){35}C{15}E7{22}(5){35}C7{14}C7{22}(5){35}E7FFF03{9}C{23}(5){35}E7F0003{9}8{23}(5){34}E(5)7{10}1{23}(5){30}C(7)7{11}E3{23}(5){27}E(7)F3{13}E7{23}(5){26}80001{5}3{13}C7{23}(5){25}000{8}3{13}C{24}(5){10}9{12}E003{9}1{13}C{24}(5){10}9{11}8007{10}9{13}8{24}(5){10}8{10}000{12}9{12}E1{24}(5){10}C{8}E003{13}9{12}C3{24}(5){10}C7{6}8007{14}8{12}8{25}(5){10}E3{5}000{16}C{12}1{25}(5){11}3FFFE003{17}C7{10}C3{25}(5){11}1FF8007{18}E7{10}87{25}(5){11}9F000{20}E3{9}E1{26}(5){11}8003{22}3{9}C3{26}(5){11}C07{23}1{9}0{27}(5){11}C{25}9{8}C1{27}(5){37}8{8}87{27}(5){37}C{7}E1{28}(5){37}C7{6}03{28}(5){37}E3{5}00{29}(5){38}3FFFC007{29}(5){38}03F8007{30}(5){38}80001{32}(5){39}803{33}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5){75}(5)&quot;},&quot;notification&quot;:{&quot;notificationFlag&quot;:true,&quot;cellphone&quot;:&quot;3177928280&quot;,&quot;notificationType&quot;:1}}]}
+
+15:54:20.230 response time in milliseconds: 557
+2 &lt; 200
+2 &lt; Content-Type: application/json
+2 &lt; Content-Length: 386
+2 &lt; Connection: keep-alive
+2 &lt; Date: Fri, 19 Jan 2024 20:54:20 GMT
+2 &lt; x-amzn-RequestId: 7acfe6ef-a347-4a7f-8f56-500bfb5f5075
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; x-amz-apigw-id: RzgrhHXiIAMEPvw=
+2 &lt; X-Amzn-Trace-Id: Root=1-65aae17c-17e44afc667b8a034f722216
+2 &lt; X-Cache: Miss from cloudfront
+2 &lt; Via: 1.1 a1d7699bcc1502272b8c1d4eb2f77f7c.cloudfront.net (CloudFront)
+2 &lt; X-Amz-Cf-Pop: BOG50-C1
+2 &lt; X-Amz-Cf-Id: 6OAsJiyLLEi4KNUf8ytgLJ18jY6xD2Lntoj3dJEkBHn8Ow5uJUfGsQ==
+{&quot;status&quot;:[{&quot;transactionId&quot;:&quot;e9c6e730-2314-4373-bbba-2d19fe508bc3&quot;,&quot;statusCode&quot;:&quot;02&quot;,&quot;statusDescription&quot;:&quot;NOT PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240119155420&quot;}],&quot;arrayError&quot;:[{&quot;transactionId&quot;:&quot;e9c6e730-2314-4373-bbba-2d19fe508bc3&quot;,&quot;errorCode&quot;:&quot;B400-001 / B400-001&quot;,&quot;errorDescription&quot;:&quot;Bad Request - validating swagger file and parsing it / Bad Request - validating swagger file and parsing it&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.33">
+      <div class="step-ref failed">33</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.status[0].statusDescription == &#39;PROCESSED&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.33">15:54:20.244 classpath:CORRandADQUI/TransaccionalADQUI.feature:33
+And match response.status[0].statusDescription == &#39;PROCESSED&#39;
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  &#39;NOT PROCESSED&#39;
+  &#39;PROCESSED&#39;
+
+classpath:CORRandADQUI/TransaccionalADQUI.feature:33
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.34">
+      <div class="step-ref skipped">34</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.resultObject[0].transaction.status == &#39;00&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.35">
+      <div class="step-ref skipped">35</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.36">
+      <div class="step-ref skipped">36</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>eval sleep(700)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.37">
+      <div class="step-ref skipped">37</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>url url</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.38">
+      <div class="step-ref skipped">38</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>path pathUrl</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.39">
+      <div class="step-ref skipped">39</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header x-api-key = apiKey</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.40">
+      <div class="step-ref skipped">40</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].transaction.status = &#39;05&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.41">
+      <div class="step-ref skipped">41</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].paymentMethod.accountType = &quot;AH&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.42">
+      <div class="step-ref skipped">42</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].paymentMethod.franchise = &quot;AMEX&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.43">
+      <div class="step-ref skipped">43</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].transaction.transactionType = &quot;VENTA&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.44">
+      <div class="step-ref skipped">44</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request bodyTrx</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.45">
+      <div class="step-ref skipped">45</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.46">
+      <div class="step-ref skipped">46</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.47">
+      <div class="step-ref skipped">47</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.status[0].statusDescription == &#39;PROCESSED&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.48">
+      <div class="step-ref skipped">48</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.resultObject[0].transaction.status == &#39;05&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.49">
+      <div class="step-ref skipped">49</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -122,10 +122,6 @@ S
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 \
 ,src/test/java/payloads/BodyCierresADQUI.json,3\b\3b29adadd469f5ed6cb47d1d9fe6d4677c7bbc1b
-c
-3src/test/java/CORRandADQUI/aprobadaOkKKKKKK.feature,b\9\b9c5c11f8ec37e0932b4badfff6f1006e2183760
-e
-5src/test/java/CORRandADQUI/TransaccionalADQUI.feature,8\b\8b27e182e737e4ca96f420c46af8765a2c30e756
 _
 /src/test/java/helper/CrearTokenDEVADQUI.feature,9\8\9855a6ee59fc96fdd4b7f36ffb71c06927744e14
 ^
@@ -134,3 +130,15 @@ _
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+W
+'src/test/java/CORR/aprobadaOk85.feature,1\e\1e1c868d7ed938211952830f13f4376c695e7a7f
+W
+'src/test/java/CORR/aprobadaOk02.feature,0\3\03f5de8e7599fdb66fd6caee27d1569305e592c8
+W
+'src/test/java/CORR/aprobadaOk04.feature,c\3\c33d49d5e2b17328980cd80553164644f2bf19cd
+`
+0src/test/java/ADQUI/TransaccionalADQUI02.feature,5\1\51af3d477494b18bfd4bed603e10247b3024e09c
+`
+0src/test/java/ADQUI/TransaccionalADQUI85.feature,9\3\93ebc7150fb7abe51af6be86219da2f123b87185
+`
+0src/test/java/ADQUI/TransaccionalADQUI00.feature,0\9\09c905ae7718f2e5938b350a5add1e4927fa3b05

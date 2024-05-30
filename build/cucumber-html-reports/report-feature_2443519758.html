@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>transacciones</td>
-      <td>05 ene. 2024, 17:27</td>
+      <td>05 feb. 2024, 16:12</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Cierres/Cierre_VoucherQA.feature</td>
-          <td      class="passed"    >28</td>
+          <td      class="passed"    >148</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">28</td>
+          <td class="total">148</td>
 
-          <td  class="passed"    >1</td>
+          <td  class="passed"    >7</td>
           <td >0</td>
-          <td class="total">1</td>
+          <td class="total">7</td>
 
-          <td class="duration" data-value="2357643100">2.357</td>
+          <td class="duration" data-value="6541762900">6.541</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.894</span>
+  <span class="lead-duration duration">0.677</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -232,7 +232,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def path = '/transactional/api/vouchers/closures'</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -250,7 +250,2101 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>17:27:22.081 &lt;&lt; lock released, cached callSingle: classpath:helper/CrearToken.feature
+        <pre>16:12:52.494 karate.env system property was: dev-corr 
+16:12:53.648 this thread waited 1131 milliseconds for callSingle lock: classpath:helper/CrearToken.feature
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bodyTrx = read('classpath:payloads/BodyCierres.json')</span>
+
+  <span class="lead-duration duration">0.061</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseTimeRange = { min: 10, max: 15000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dateTimes = karate.call('classpath:helper/dateTime.js')</span>
+
+  <span class="lead-duration duration">0.601</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.dateTime = dateTimes.date</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.hour = dateTimes.hora</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.date = dateTimes.dia</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.444</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">peticion Post que envia el cierre Correcto de una determinada terminal o datafono</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url url</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path path</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header x-api-key = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.financialCode = '0001'</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.address = 'PRUEBAS CIERRES MIXTO CORR 0001'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.correspondentId = '92933392'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.terminalId = 'DGSDYFDYE3'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.429</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>16:12:54.351 request:
+1 &gt; POST https://apicorr.redebanvd.net/transactional/api/vouchers/closures
+1 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
+1 &gt; Authorization: Bearer eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA3MTY3NTcxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDcxNjkzNzEsImlhdCI6MTcwNzE2NzU3MSwidmVyc2lvbiI6MiwianRpIjoiYmZlMzQzZmItNWYxZi00NjNlLWIxMWItMGUwNDhjN2VjNTVmIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.JiFPCklzKvR-XQwHzbsOx8lk2ntgtWB_R8O56sdTx09lKOQvG3abb3CyjKhoo1a4wzxlgSPYCRLMENGI9bodAfQbvju5TZrCsvcBYMv2dUkkAQJOcY9B0mJqEw0DNNEYbaSbiea-42CXqYvLBXM_tXnmQFy0Fl0B1g-WnM9XOZ1urM6xMDueKxwHy3qawmnn76HrmnqQqpHqEjkGBlpJU4bVkRoA3vYko9zEpTBEMcZy5SZ97ww6UU8fdT5UVTk82UE45DuaGJekSdTIEbDxTP1s-t4ejfTTWvnl7rKf74x1joCq9uVQ1C4jY9lU-RQ4Tbl9cqVLFBQG1oPwlaz7Ug
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 295
+1 &gt; Host: apicorr.redebanvd.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0001&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;terminalId&quot;:&quot;DGSDYFDYE3&quot;,&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;financialCode&quot;:&quot;0001&quot;},&quot;transaction&quot;:{&quot;date&quot;:&quot;20240205&quot;,&quot;dateTime&quot;:&quot;20240205161200&quot;,&quot;hour&quot;:&quot;1612&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}]}
+
+16:12:54.771 response time in milliseconds: 419
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 506
+1 &lt; Connection: keep-alive
+1 &lt; Date: Mon, 05 Feb 2024 21:12:53 GMT
+1 &lt; x-amzn-RequestId: d0bd0621-f852-4260-b8b3-8205bbc5ab47
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; x-amz-apigw-id: SrlVUHyLoAMERbA=
+1 &lt; X-Amzn-Trace-Id: Root=1-65c14f54-1884856f0c34cadd573600be
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 029192accfd6bfc8c2572988b78b92e6.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-C1
+1 &lt; X-Amz-Cf-Id: Zlw4Bwj_8gQXmH0Drs78aqE79NFW6z9QsCw_7XyHbaPGkY-y13b91A==
+{&quot;resultObject&quot;:[{&quot;commerce&quot;:{&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0001&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;financialCode&quot;:&quot;0001&quot;,&quot;terminalId&quot;:&quot;DGSDYFDYE3&quot;},&quot;transaction&quot;:{&quot;closeId&quot;:&quot;a86c8c24-8a0a-4233-bf70-6a02108b9e08&quot;,&quot;date&quot;:&quot;2024-02-05&quot;,&quot;hour&quot;:&quot;16:12:00&quot;,&quot;dateTime&quot;:&quot;2024-02-05T16:12:00&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}],&quot;status&quot;:[{&quot;transactionId&quot;:&quot;a86c8c24-8a0a-4233-bf70-6a02108b9e08&quot;,&quot;statusCode&quot;:&quot;00&quot;,&quot;statusDescription&quot;:&quot;PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240205161253&quot;}]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status[0].statusDescription == 'PROCESSED'</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status[0].statusCode == '00'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.675</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = '/transactional/api/vouchers/closures'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>16:12:52.494 karate.env system property was: dev-corr 
+16:12:53.647 this thread waited 1129 milliseconds for callSingle lock: classpath:helper/CrearToken.feature
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bodyTrx = read('classpath:payloads/BodyCierres.json')</span>
+
+  <span class="lead-duration duration">0.061</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseTimeRange = { min: 10, max: 15000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dateTimes = karate.call('classpath:helper/dateTime.js')</span>
+
+  <span class="lead-duration duration">0.600</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.dateTime = dateTimes.date</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.hour = dateTimes.hora</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.date = dateTimes.dia</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.444</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">peticion Post que envia el cierre Correcto de una determinada terminal o datafono</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url url</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path path</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header x-api-key = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.financialCode = '0002'</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.address = 'PRUEBAS CIERRES MIXTO CORR 0002'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.correspondentId = '92933392'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.terminalId = 'DGSDYFDYE3'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.423</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>16:12:54.349 request:
+1 &gt; POST https://apicorr.redebanvd.net/transactional/api/vouchers/closures
+1 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
+1 &gt; Authorization: Bearer eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA3MTY3NTcxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDcxNjkzNzEsImlhdCI6MTcwNzE2NzU3MSwidmVyc2lvbiI6MiwianRpIjoiYmZlMzQzZmItNWYxZi00NjNlLWIxMWItMGUwNDhjN2VjNTVmIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.JiFPCklzKvR-XQwHzbsOx8lk2ntgtWB_R8O56sdTx09lKOQvG3abb3CyjKhoo1a4wzxlgSPYCRLMENGI9bodAfQbvju5TZrCsvcBYMv2dUkkAQJOcY9B0mJqEw0DNNEYbaSbiea-42CXqYvLBXM_tXnmQFy0Fl0B1g-WnM9XOZ1urM6xMDueKxwHy3qawmnn76HrmnqQqpHqEjkGBlpJU4bVkRoA3vYko9zEpTBEMcZy5SZ97ww6UU8fdT5UVTk82UE45DuaGJekSdTIEbDxTP1s-t4ejfTTWvnl7rKf74x1joCq9uVQ1C4jY9lU-RQ4Tbl9cqVLFBQG1oPwlaz7Ug
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 295
+1 &gt; Host: apicorr.redebanvd.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0002&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;terminalId&quot;:&quot;DGSDYFDYE3&quot;,&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;financialCode&quot;:&quot;0002&quot;},&quot;transaction&quot;:{&quot;date&quot;:&quot;20240205&quot;,&quot;dateTime&quot;:&quot;20240205161200&quot;,&quot;hour&quot;:&quot;1612&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}]}
+
+16:12:54.767 response time in milliseconds: 418
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 506
+1 &lt; Connection: keep-alive
+1 &lt; Date: Mon, 05 Feb 2024 21:12:53 GMT
+1 &lt; x-amzn-RequestId: 96b4db04-72c1-4a84-aa67-d676f1103c87
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; x-amz-apigw-id: SrlVUFhEIAMEH_Q=
+1 &lt; X-Amzn-Trace-Id: Root=1-65c14f54-254021f30b34a09015a69419
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 19d162d3ed93abff24de66e1e95635fa.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-C1
+1 &lt; X-Amz-Cf-Id: azhvZ1PCalGLLGMGIzM_upsIPvnbwpJBRMqjNkNfJR5pE8NL-Yd4RA==
+{&quot;resultObject&quot;:[{&quot;commerce&quot;:{&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0002&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;financialCode&quot;:&quot;0002&quot;,&quot;terminalId&quot;:&quot;DGSDYFDYE3&quot;},&quot;transaction&quot;:{&quot;closeId&quot;:&quot;024af859-6c8b-4326-bdf1-c535680e8df5&quot;,&quot;date&quot;:&quot;2024-02-05&quot;,&quot;hour&quot;:&quot;16:12:00&quot;,&quot;dateTime&quot;:&quot;2024-02-05T16:12:00&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}],&quot;status&quot;:[{&quot;transactionId&quot;:&quot;024af859-6c8b-4326-bdf1-c535680e8df5&quot;,&quot;statusCode&quot;:&quot;00&quot;,&quot;statusDescription&quot;:&quot;PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240205161253&quot;}]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status[0].statusDescription == 'PROCESSED'</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status[0].statusCode == '00'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.674</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = '/transactional/api/vouchers/closures'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>16:12:52.493 karate.env system property was: dev-corr 
+16:12:53.648 this thread waited 1132 milliseconds for callSingle lock: classpath:helper/CrearToken.feature
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bodyTrx = read('classpath:payloads/BodyCierres.json')</span>
+
+  <span class="lead-duration duration">0.064</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseTimeRange = { min: 10, max: 15000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dateTimes = karate.call('classpath:helper/dateTime.js')</span>
+
+  <span class="lead-duration duration">0.598</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.dateTime = dateTimes.date</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.hour = dateTimes.hora</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.date = dateTimes.dia</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.447</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">peticion Post que envia el cierre Correcto de una determinada terminal o datafono</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url url</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path path</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header x-api-key = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.financialCode = '0007'</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.address = 'PRUEBAS CIERRES MIXTO CORR 0007'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.correspondentId = '92933392'</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.terminalId = 'DGSDYFDYE3'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.407</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>16:12:54.352 request:
+1 &gt; POST https://apicorr.redebanvd.net/transactional/api/vouchers/closures
+1 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
+1 &gt; Authorization: Bearer eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA3MTY3NTcxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDcxNjkzNzEsImlhdCI6MTcwNzE2NzU3MSwidmVyc2lvbiI6MiwianRpIjoiYmZlMzQzZmItNWYxZi00NjNlLWIxMWItMGUwNDhjN2VjNTVmIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.JiFPCklzKvR-XQwHzbsOx8lk2ntgtWB_R8O56sdTx09lKOQvG3abb3CyjKhoo1a4wzxlgSPYCRLMENGI9bodAfQbvju5TZrCsvcBYMv2dUkkAQJOcY9B0mJqEw0DNNEYbaSbiea-42CXqYvLBXM_tXnmQFy0Fl0B1g-WnM9XOZ1urM6xMDueKxwHy3qawmnn76HrmnqQqpHqEjkGBlpJU4bVkRoA3vYko9zEpTBEMcZy5SZ97ww6UU8fdT5UVTk82UE45DuaGJekSdTIEbDxTP1s-t4ejfTTWvnl7rKf74x1joCq9uVQ1C4jY9lU-RQ4Tbl9cqVLFBQG1oPwlaz7Ug
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 295
+1 &gt; Host: apicorr.redebanvd.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0007&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;terminalId&quot;:&quot;DGSDYFDYE3&quot;,&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;financialCode&quot;:&quot;0007&quot;},&quot;transaction&quot;:{&quot;date&quot;:&quot;20240205&quot;,&quot;dateTime&quot;:&quot;20240205161200&quot;,&quot;hour&quot;:&quot;1612&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}]}
+
+16:12:54.754 response time in milliseconds: 402
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 506
+1 &lt; Connection: keep-alive
+1 &lt; Date: Mon, 05 Feb 2024 21:12:53 GMT
+1 &lt; x-amzn-RequestId: abf239de-553b-437b-adc3-cce31ca30a40
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; x-amz-apigw-id: SrlVUFmcoAMEZxA=
+1 &lt; X-Amzn-Trace-Id: Root=1-65c14f54-69bd228a37bda977300c2408
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 eea31a927983f0bce2a203db674ff998.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-C1
+1 &lt; X-Amz-Cf-Id: VO3P3ZILwCTyRnJ1r8XMf_d7GxIEsXGdJXDov54JJXNApvc3ndIGvg==
+{&quot;resultObject&quot;:[{&quot;commerce&quot;:{&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0007&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;financialCode&quot;:&quot;0007&quot;,&quot;terminalId&quot;:&quot;DGSDYFDYE3&quot;},&quot;transaction&quot;:{&quot;closeId&quot;:&quot;5e89ea23-fbf4-4974-b87c-ac9b95d78a6d&quot;,&quot;date&quot;:&quot;2024-02-05&quot;,&quot;hour&quot;:&quot;16:12:00&quot;,&quot;dateTime&quot;:&quot;2024-02-05T16:12:00&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}],&quot;status&quot;:[{&quot;transactionId&quot;:&quot;5e89ea23-fbf4-4974-b87c-ac9b95d78a6d&quot;,&quot;statusCode&quot;:&quot;00&quot;,&quot;statusDescription&quot;:&quot;PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240205161253&quot;}]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status[0].statusDescription == 'PROCESSED'</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status[0].statusCode == '00'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.718</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = '/transactional/api/vouchers/closures'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>16:12:53.647 &lt;&lt; lock released, cached callSingle: classpath:helper/CrearToken.feature
 </pre>
       </div>
     </div>
@@ -284,10 +2378,10 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
           <a>Doc string</a>
       </div>
-      <div id="msg-4" class="collapse collapsable-details">
+      <div id="msg-22" class="collapse collapsable-details">
         <pre>{
   &quot;pathUrl&quot;: &quot;/transactional/api/vouchers/transactions&quot;,
   &quot;apiToken&quot;: &quot;https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com/oauth2/token&quot;,
@@ -314,7 +2408,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; Given</span>
   <span class="name">url apiToken</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -328,12 +2422,12 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
           <a>Doc string</a>
       </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>17:27:20.535 karate.env system property was: dev-corr 
-17:27:20.547 &gt;&gt; lock acquired, begin callSingle: classpath:helper/CrearToken.feature
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>16:12:52.492 karate.env system property was: dev-corr 
+16:12:52.513 &gt;&gt; lock acquired, begin callSingle: classpath:helper/CrearToken.feature
 </pre>
       </div>
     </div>
@@ -407,7 +2501,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">request 'grant_type=client_credentials&amp;Scope=consumers%2Ffabrica'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -434,7 +2528,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">1.451</span>
+  <span class="lead-duration duration">1.035</span>
 
 </div>
 
@@ -448,11 +2542,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
           <a>Doc string</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>17:27:21.054 request:
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>16:12:53.080 request:
 1 &gt; POST https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com/oauth2/token
 1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
 1 &gt; Authorization: Basic NnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGw6MW5uNjVnOXA1bHY5cnZubHYwdTljNm52cnMzM2hramluNWVrNDNyNTJyYmcwaDhxdmhjMQ==
@@ -463,14 +2557,14 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
 
-17:27:22.048 response time in milliseconds: 987
+16:12:53.611 response time in milliseconds: 524
 1 &lt; 200
-1 &lt; Date: Fri, 05 Jan 2024 22:27:21 GMT
+1 &lt; Date: Mon, 05 Feb 2024 21:12:51 GMT
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; Content-Security-Policy-Report-Only: script-src https://d3oia8etllorh5.cloudfront.net https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com; style-src https://d3oia8etllorh5.cloudfront.net https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com; img-src https://d3oia8etllorh5.cloudfront.net https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com; report-uri https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com/cspreport
-1 &lt; x-amz-cognito-request-id: fb37ba79-b49f-4302-977a-819e79d57927
+1 &lt; x-amz-cognito-request-id: 034ea3f3-1aa2-40d7-b00e-c372f393930b
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 1; mode=block
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -479,8 +2573,8 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
 1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 1 &lt; X-Frame-Options: DENY
 1 &lt; Server: Server
-1 &lt; Set-Cookie: XSRF-TOKEN=36959cff-fdca-4f7c-a295-f7e4e9ec6dc0; Domain=voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com; Secure
-{&quot;access_token&quot;:&quot;eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA0NDkzNjQxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDQ0OTU0NDEsImlhdCI6MTcwNDQ5MzY0MSwidmVyc2lvbiI6MiwianRpIjoiYzBiNTFjOWUtNDI5MC00OWYwLWI5NWYtZGMyYWRmMjEyNTdjIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.ATDTgc_XrFvJJdCMyH6A5oUePYhPj8FPUbJg1g4Vg-BlTsND61HiXZ9kvdziduq4NBX7i6U4h1HFKlsvIQj_GrbSzdAvehzjYmgAo_dz0P4jVE9X-PfvzCo94zX3Uz3AgVhyAXS24WSp-AI1A3woqe1OqbgFMxWI14nYzkYk6bBFwDTCeYayXIPJPhwfsL7QWWuy9PhQg2eLMDAwnxJ2R9KWnlCKKfGlLtaDkYZJXos1eS0xGM_dgDwrezOmqzKXP5rEsCblnwXWcM50ylvYqRENUPL9g9C4a72EuPenLIrgtEKCkdEbkXEzKPdiijm6IFJp9CZ5Uk5rWog23kukLA&quot;,&quot;expires_in&quot;:1800,&quot;token_type&quot;:&quot;Bearer&quot;}
+1 &lt; Set-Cookie: XSRF-TOKEN=2fc3417f-2cc6-4ad0-a3ca-8a067873f7b5; Domain=voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com; Secure
+{&quot;access_token&quot;:&quot;eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA3MTY3NTcxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDcxNjkzNzEsImlhdCI6MTcwNzE2NzU3MSwidmVyc2lvbiI6MiwianRpIjoiYmZlMzQzZmItNWYxZi00NjNlLWIxMWItMGUwNDhjN2VjNTVmIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.JiFPCklzKvR-XQwHzbsOx8lk2ntgtWB_R8O56sdTx09lKOQvG3abb3CyjKhoo1a4wzxlgSPYCRLMENGI9bodAfQbvju5TZrCsvcBYMv2dUkkAQJOcY9B0mJqEw0DNNEYbaSbiea-42CXqYvLBXM_tXnmQFy0Fl0B1g-WnM9XOZ1urM6xMDueKxwHy3qawmnn76HrmnqQqpHqEjkGBlpJU4bVkRoA3vYko9zEpTBEMcZy5SZ97ww6UU8fdT5UVTk82UE45DuaGJekSdTIEbDxTP1s-t4ejfTTWvnl7rKf74x1joCq9uVQ1C4jY9lU-RQ4Tbl9cqVLFBQG1oPwlaz7Ug&quot;,&quot;expires_in&quot;:1800,&quot;token_type&quot;:&quot;Bearer&quot;}
 
 </pre>
       </div>
@@ -528,7 +2622,7 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
   <span class="keyword indention">&gt; *</span>
   <span class="name">def access_token = response.access_token</span>
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -555,7 +2649,7 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
   <span class="keyword indention">*</span>
   <span class="name">def bodyTrx = read('classpath:payloads/BodyCierres.json')</span>
 
-  <span class="lead-duration duration">0.037</span>
+  <span class="lead-duration duration">0.061</span>
 
 </div>
 
@@ -609,7 +2703,7 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
   <span class="keyword indention">*</span>
   <span class="name">def dateTimes = karate.call('classpath:helper/dateTime.js')</span>
 
-  <span class="lead-duration duration">0.387</span>
+  <span class="lead-duration duration">0.601</span>
 
 </div>
 
@@ -636,7 +2730,7 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
   <span class="keyword indention">*</span>
   <span class="name">set bodyTrx.payload[0].transaction.dateTime = dateTimes.date</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -663,7 +2757,7 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
   <span class="keyword indention">*</span>
   <span class="name">set bodyTrx.payload[0].transaction.hour = dateTimes.hora</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -728,10 +2822,10 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
 </div>
 
 
-  <span class="lead-duration duration">0.463</span>
+  <span class="lead-duration duration">0.447</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -744,14 +2838,14 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-25" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -763,7 +2857,704 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
+  <div id="steps-26" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url url</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path path</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header x-api-key = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.financialCode = '0013'</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.address = 'PRUEBAS CIERRES MIXTO CORR 0013'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.correspondentId = '92933392'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.terminalId = 'DGSDYFDYE3'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.409</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>16:12:54.349 request:
+2 &gt; POST https://apicorr.redebanvd.net/transactional/api/vouchers/closures
+2 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
+2 &gt; Authorization: Bearer eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA3MTY3NTcxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDcxNjkzNzEsImlhdCI6MTcwNzE2NzU3MSwidmVyc2lvbiI6MiwianRpIjoiYmZlMzQzZmItNWYxZi00NjNlLWIxMWItMGUwNDhjN2VjNTVmIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.JiFPCklzKvR-XQwHzbsOx8lk2ntgtWB_R8O56sdTx09lKOQvG3abb3CyjKhoo1a4wzxlgSPYCRLMENGI9bodAfQbvju5TZrCsvcBYMv2dUkkAQJOcY9B0mJqEw0DNNEYbaSbiea-42CXqYvLBXM_tXnmQFy0Fl0B1g-WnM9XOZ1urM6xMDueKxwHy3qawmnn76HrmnqQqpHqEjkGBlpJU4bVkRoA3vYko9zEpTBEMcZy5SZ97ww6UU8fdT5UVTk82UE45DuaGJekSdTIEbDxTP1s-t4ejfTTWvnl7rKf74x1joCq9uVQ1C4jY9lU-RQ4Tbl9cqVLFBQG1oPwlaz7Ug
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 295
+2 &gt; Host: apicorr.redebanvd.net
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0013&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;terminalId&quot;:&quot;DGSDYFDYE3&quot;,&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;financialCode&quot;:&quot;0013&quot;},&quot;transaction&quot;:{&quot;date&quot;:&quot;20240205&quot;,&quot;dateTime&quot;:&quot;20240205161200&quot;,&quot;hour&quot;:&quot;1612&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}]}
+
+16:12:54.753 response time in milliseconds: 403
+2 &lt; 200
+2 &lt; Content-Type: application/json
+2 &lt; Content-Length: 506
+2 &lt; Connection: keep-alive
+2 &lt; Date: Mon, 05 Feb 2024 21:12:53 GMT
+2 &lt; x-amzn-RequestId: 46b3fd33-047a-4f58-b41c-7b124eea7302
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; x-amz-apigw-id: SrlVUFkcoAMEZRw=
+2 &lt; X-Amzn-Trace-Id: Root=1-65c14f54-4ed3062564c685f3325176f1
+2 &lt; X-Cache: Miss from cloudfront
+2 &lt; Via: 1.1 bd8c6bfe710f91c12ac92a052545fb5e.cloudfront.net (CloudFront)
+2 &lt; X-Amz-Cf-Pop: BOG50-C1
+2 &lt; X-Amz-Cf-Id: 4gnPQDofEc8FwSVsJHG2wqYImcX2AO5eeewxwrWAmSKFT46rkgTvHQ==
+{&quot;resultObject&quot;:[{&quot;commerce&quot;:{&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0013&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;financialCode&quot;:&quot;0013&quot;,&quot;terminalId&quot;:&quot;DGSDYFDYE3&quot;},&quot;transaction&quot;:{&quot;closeId&quot;:&quot;7c54c185-200b-4434-91c3-8bd2db98938c&quot;,&quot;date&quot;:&quot;2024-02-05&quot;,&quot;hour&quot;:&quot;16:12:00&quot;,&quot;dateTime&quot;:&quot;2024-02-05T16:12:00&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}],&quot;status&quot;:[{&quot;transactionId&quot;:&quot;7c54c185-200b-4434-91c3-8bd2db98938c&quot;,&quot;statusCode&quot;:&quot;00&quot;,&quot;statusDescription&quot;:&quot;PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240205161253&quot;}]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status[0].statusDescription == 'PROCESSED'</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status[0].statusCode == '00'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.024</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-28">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-28" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-29">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-29" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = '/transactional/api/vouchers/closures'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>16:12:54.794 karate.env system property was: dev-corr 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bodyTrx = read('classpath:payloads/BodyCierres.json')</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseTimeRange = { min: 10, max: 15000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dateTimes = karate.call('classpath:helper/dateTime.js')</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.dateTime = dateTimes.date</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.hour = dateTimes.hora</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.date = dateTimes.dia</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.358</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">peticion Post que envia el cierre Correcto de una determinada terminal o datafono</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-32">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -852,7 +3643,7 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
   <span class="keyword indention">And</span>
   <span class="name">request bodyTrx.payload[0].commerce.financialCode = '0023'</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -879,6 +3670,33 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
   <span class="keyword indention">And</span>
   <span class="name">request bodyTrx.payload[0].commerce.address = 'PRUEBAS CIERRES MIXTO CORR 0023'</span>
 
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.correspondentId = '92933392'</span>
+
   <span class="lead-duration duration">0.000</span>
 
 </div>
@@ -904,34 +3722,7 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">request bodyTrx.payload[0].commerce.correspondentId = '2012202301'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">request bodyTrx.payload[0].commerce.terminalId = 'LEAL2022'</span>
+  <span class="name">request bodyTrx.payload[0].commerce.terminalId = 'DGSDYFDYE3'</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -987,7 +3778,7 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.442</span>
+  <span class="lead-duration duration">0.352</span>
 
 </div>
 
@@ -1001,37 +3792,37 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
           <a>Doc string</a>
       </div>
-      <div id="msg-9" class="collapse collapsable-details">
-        <pre>17:27:22.529 request:
-2 &gt; POST https://apicorr.redebanvd.net/transactional/api/vouchers/closures
-2 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
-2 &gt; Authorization: Bearer eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA0NDkzNjQxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDQ0OTU0NDEsImlhdCI6MTcwNDQ5MzY0MSwidmVyc2lvbiI6MiwianRpIjoiYzBiNTFjOWUtNDI5MC00OWYwLWI5NWYtZGMyYWRmMjEyNTdjIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.ATDTgc_XrFvJJdCMyH6A5oUePYhPj8FPUbJg1g4Vg-BlTsND61HiXZ9kvdziduq4NBX7i6U4h1HFKlsvIQj_GrbSzdAvehzjYmgAo_dz0P4jVE9X-PfvzCo94zX3Uz3AgVhyAXS24WSp-AI1A3woqe1OqbgFMxWI14nYzkYk6bBFwDTCeYayXIPJPhwfsL7QWWuy9PhQg2eLMDAwnxJ2R9KWnlCKKfGlLtaDkYZJXos1eS0xGM_dgDwrezOmqzKXP5rEsCblnwXWcM50ylvYqRENUPL9g9C4a72EuPenLIrgtEKCkdEbkXEzKPdiijm6IFJp9CZ5Uk5rWog23kukLA
-2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 295
-2 &gt; Host: apicorr.redebanvd.net
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
-2 &gt; Accept-Encoding: gzip,deflate
-{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0023&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;terminalId&quot;:&quot;LEAL2022&quot;,&quot;correspondentId&quot;:&quot;2012202301&quot;,&quot;financialCode&quot;:&quot;0023&quot;},&quot;transaction&quot;:{&quot;date&quot;:&quot;20240105&quot;,&quot;dateTime&quot;:&quot;20240105172700&quot;,&quot;hour&quot;:&quot;1727&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}]}
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>16:12:54.829 request:
+1 &gt; POST https://apicorr.redebanvd.net/transactional/api/vouchers/closures
+1 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
+1 &gt; Authorization: Bearer eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA3MTY3NTcxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDcxNjkzNzEsImlhdCI6MTcwNzE2NzU3MSwidmVyc2lvbiI6MiwianRpIjoiYmZlMzQzZmItNWYxZi00NjNlLWIxMWItMGUwNDhjN2VjNTVmIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.JiFPCklzKvR-XQwHzbsOx8lk2ntgtWB_R8O56sdTx09lKOQvG3abb3CyjKhoo1a4wzxlgSPYCRLMENGI9bodAfQbvju5TZrCsvcBYMv2dUkkAQJOcY9B0mJqEw0DNNEYbaSbiea-42CXqYvLBXM_tXnmQFy0Fl0B1g-WnM9XOZ1urM6xMDueKxwHy3qawmnn76HrmnqQqpHqEjkGBlpJU4bVkRoA3vYko9zEpTBEMcZy5SZ97ww6UU8fdT5UVTk82UE45DuaGJekSdTIEbDxTP1s-t4ejfTTWvnl7rKf74x1joCq9uVQ1C4jY9lU-RQ4Tbl9cqVLFBQG1oPwlaz7Ug
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 295
+1 &gt; Host: apicorr.redebanvd.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0023&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;terminalId&quot;:&quot;DGSDYFDYE3&quot;,&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;financialCode&quot;:&quot;0023&quot;},&quot;transaction&quot;:{&quot;date&quot;:&quot;20240205&quot;,&quot;dateTime&quot;:&quot;20240205161200&quot;,&quot;hour&quot;:&quot;1612&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}]}
 
-17:27:22.968 response time in milliseconds: 437
-2 &lt; 200
-2 &lt; Content-Type: application/json
-2 &lt; Content-Length: 506
-2 &lt; Connection: keep-alive
-2 &lt; Date: Fri, 05 Jan 2024 22:27:22 GMT
-2 &lt; x-amzn-RequestId: 1a9a9f93-6f9d-4d7c-9d8a-c6cded03af97
-2 &lt; Access-Control-Allow-Origin: *
-2 &lt; x-amz-apigw-id: RFlLvHiuIAMEL9w=
-2 &lt; X-Amzn-Trace-Id: Root=1-6598824a-46ac383d51713b3a5e6f084d
-2 &lt; X-Cache: Miss from cloudfront
-2 &lt; Via: 1.1 eea31a927983f0bce2a203db674ff998.cloudfront.net (CloudFront)
-2 &lt; X-Amz-Cf-Pop: BOG50-C1
-2 &lt; X-Amz-Cf-Id: dTMFDDXJgHMQGz-oejuTX9Mh0EDSU1oxDCW3Nfk9S-bJIldaIbtlfg==
-{&quot;resultObject&quot;:[{&quot;commerce&quot;:{&quot;correspondentId&quot;:&quot;2012202301&quot;,&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0023&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;financialCode&quot;:&quot;0023&quot;,&quot;terminalId&quot;:&quot;LEAL2022&quot;},&quot;transaction&quot;:{&quot;closeId&quot;:&quot;0774afba-e1e9-41fe-9385-b2dff10d8d1a&quot;,&quot;date&quot;:&quot;2024-01-05&quot;,&quot;hour&quot;:&quot;17:27:00&quot;,&quot;dateTime&quot;:&quot;2024-01-05T17:27:00&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}],&quot;status&quot;:[{&quot;transactionId&quot;:&quot;0774afba-e1e9-41fe-9385-b2dff10d8d1a&quot;,&quot;statusCode&quot;:&quot;00&quot;,&quot;statusDescription&quot;:&quot;PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240105172722&quot;}]}
+16:12:55.179 response time in milliseconds: 349
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 506
+1 &lt; Connection: keep-alive
+1 &lt; Date: Mon, 05 Feb 2024 21:12:53 GMT
+1 &lt; x-amzn-RequestId: b4cdac23-0c9e-4abe-98ef-0872fb8862eb
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; x-amz-apigw-id: SrlVZFI6IAMEnkg=
+1 &lt; X-Amzn-Trace-Id: Root=1-65c14f55-7cee8a2a09dd7bbb0c8bb083
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 029192accfd6bfc8c2572988b78b92e6.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-C1
+1 &lt; X-Amz-Cf-Id: g8ifCs1VAu99GO9CgfwMNlBfg9Dnav9pcHhNr_i7U2OM8YrZTvCnuw==
+{&quot;resultObject&quot;:[{&quot;commerce&quot;:{&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0023&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;financialCode&quot;:&quot;0023&quot;,&quot;terminalId&quot;:&quot;DGSDYFDYE3&quot;},&quot;transaction&quot;:{&quot;closeId&quot;:&quot;0f7bcbbc-b25b-413f-9123-e0812f620bf3&quot;,&quot;date&quot;:&quot;2024-02-05&quot;,&quot;hour&quot;:&quot;16:12:00&quot;,&quot;dateTime&quot;:&quot;2024-02-05T16:12:00&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}],&quot;status&quot;:[{&quot;transactionId&quot;:&quot;0f7bcbbc-b25b-413f-9123-e0812f620bf3&quot;,&quot;statusCode&quot;:&quot;00&quot;,&quot;statusDescription&quot;:&quot;PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240205161253&quot;}]}
 
 </pre>
       </div>
@@ -1079,7 +3870,7 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
   <span class="keyword indention">And</span>
   <span class="name">assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1106,7 +3897,7 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
   <span class="keyword indention">And</span>
   <span class="name">match response.status[0].statusDescription == 'PROCESSED'</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1133,7 +3924,1401 @@ grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
   <span class="keyword indention">And</span>
   <span class="name">match response.status[0].statusCode == '00'</span>
 
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.022</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-34">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-34" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-35">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-35" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = '/transactional/api/vouchers/closures'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>16:12:54.797 karate.env system property was: dev-corr 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bodyTrx = read('classpath:payloads/BodyCierres.json')</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseTimeRange = { min: 10, max: 15000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dateTimes = karate.call('classpath:helper/dateTime.js')</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.dateTime = dateTimes.date</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.hour = dateTimes.hora</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.date = dateTimes.dia</span>
+
   <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.200</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">peticion Post que envia el cierre Correcto de una determinada terminal o datafono</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-37" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-38">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-38" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url url</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path path</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header x-api-key = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.financialCode = '0051'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.address = 'PRUEBAS CIERRES MIXTO CORR 0051'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.correspondentId = '92933392'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.terminalId = 'VZASGHDF'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.193</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details">
+        <pre>16:12:54.831 request:
+1 &gt; POST https://apicorr.redebanvd.net/transactional/api/vouchers/closures
+1 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
+1 &gt; Authorization: Bearer eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA3MTY3NTcxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDcxNjkzNzEsImlhdCI6MTcwNzE2NzU3MSwidmVyc2lvbiI6MiwianRpIjoiYmZlMzQzZmItNWYxZi00NjNlLWIxMWItMGUwNDhjN2VjNTVmIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.JiFPCklzKvR-XQwHzbsOx8lk2ntgtWB_R8O56sdTx09lKOQvG3abb3CyjKhoo1a4wzxlgSPYCRLMENGI9bodAfQbvju5TZrCsvcBYMv2dUkkAQJOcY9B0mJqEw0DNNEYbaSbiea-42CXqYvLBXM_tXnmQFy0Fl0B1g-WnM9XOZ1urM6xMDueKxwHy3qawmnn76HrmnqQqpHqEjkGBlpJU4bVkRoA3vYko9zEpTBEMcZy5SZ97ww6UU8fdT5UVTk82UE45DuaGJekSdTIEbDxTP1s-t4ejfTTWvnl7rKf74x1joCq9uVQ1C4jY9lU-RQ4Tbl9cqVLFBQG1oPwlaz7Ug
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 293
+1 &gt; Host: apicorr.redebanvd.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0051&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;terminalId&quot;:&quot;VZASGHDF&quot;,&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;financialCode&quot;:&quot;0051&quot;},&quot;transaction&quot;:{&quot;date&quot;:&quot;20240205&quot;,&quot;dateTime&quot;:&quot;20240205161200&quot;,&quot;hour&quot;:&quot;1612&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}]}
+
+16:12:55.021 response time in milliseconds: 189
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 504
+1 &lt; Connection: keep-alive
+1 &lt; Date: Mon, 05 Feb 2024 21:12:53 GMT
+1 &lt; x-amzn-RequestId: 4105a799-9ba3-463a-85d6-0b1bd10731cd
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; x-amz-apigw-id: SrlVXGLooAMEatA=
+1 &lt; X-Amzn-Trace-Id: Root=1-65c14f55-1f9f3ead51d850b76cf71701
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 c044357f15da715d4a1fab016bbf0008.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-C1
+1 &lt; X-Amz-Cf-Id: 14KknhYQd2Ypakso3OO1v2DsEzfPqd3rpP6Gv1-O59QG8-5AYvx2Yg==
+{&quot;resultObject&quot;:[{&quot;commerce&quot;:{&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0051&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;financialCode&quot;:&quot;0051&quot;,&quot;terminalId&quot;:&quot;VZASGHDF&quot;},&quot;transaction&quot;:{&quot;closeId&quot;:&quot;761105f5-b28d-4616-ae33-858a7f6c74f0&quot;,&quot;date&quot;:&quot;2024-02-05&quot;,&quot;hour&quot;:&quot;16:12:00&quot;,&quot;dateTime&quot;:&quot;2024-02-05T16:12:00&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}],&quot;status&quot;:[{&quot;transactionId&quot;:&quot;761105f5-b28d-4616-ae33-858a7f6c74f0&quot;,&quot;statusCode&quot;:&quot;00&quot;,&quot;statusDescription&quot;:&quot;PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240205161253&quot;}]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status[0].statusDescription == 'PROCESSED'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status[0].statusCode == '00'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.035</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-40">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-40" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-41">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-41" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def path = '/transactional/api/vouchers/closures'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>16:12:54.797 karate.env system property was: dev-corr 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def bodyTrx = read('classpath:payloads/BodyCierres.json')</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseTimeRange = { min: 10, max: 15000 }</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dateTimes = karate.call('classpath:helper/dateTime.js')</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.dateTime = dateTimes.date</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.hour = dateTimes.hora</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set bodyTrx.payload[0].transaction.date = dateTimes.dia</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.371</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">peticion Post que envia el cierre Correcto de una determinada terminal o datafono</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-43" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-44">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-44" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url url</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path path</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header x-api-key = apiKey</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.financialCode = '0051'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.address = 'PRUEBAS CIERRES MIXTO CORR 0051'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.correspondentId = '92933392'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx.payload[0].commerce.terminalId = 'AA9642A5'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request bodyTrx</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.362</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>16:12:54.852 request:
+1 &gt; POST https://apicorr.redebanvd.net/transactional/api/vouchers/closures
+1 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
+1 &gt; Authorization: Bearer eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA3MTY3NTcxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDcxNjkzNzEsImlhdCI6MTcwNzE2NzU3MSwidmVyc2lvbiI6MiwianRpIjoiYmZlMzQzZmItNWYxZi00NjNlLWIxMWItMGUwNDhjN2VjNTVmIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.JiFPCklzKvR-XQwHzbsOx8lk2ntgtWB_R8O56sdTx09lKOQvG3abb3CyjKhoo1a4wzxlgSPYCRLMENGI9bodAfQbvju5TZrCsvcBYMv2dUkkAQJOcY9B0mJqEw0DNNEYbaSbiea-42CXqYvLBXM_tXnmQFy0Fl0B1g-WnM9XOZ1urM6xMDueKxwHy3qawmnn76HrmnqQqpHqEjkGBlpJU4bVkRoA3vYko9zEpTBEMcZy5SZ97ww6UU8fdT5UVTk82UE45DuaGJekSdTIEbDxTP1s-t4ejfTTWvnl7rKf74x1joCq9uVQ1C4jY9lU-RQ4Tbl9cqVLFBQG1oPwlaz7Ug
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 293
+1 &gt; Host: apicorr.redebanvd.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0051&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;terminalId&quot;:&quot;AA9642A5&quot;,&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;financialCode&quot;:&quot;0051&quot;},&quot;transaction&quot;:{&quot;date&quot;:&quot;20240205&quot;,&quot;dateTime&quot;:&quot;20240205161200&quot;,&quot;hour&quot;:&quot;1612&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}]}
+
+16:12:55.211 response time in milliseconds: 359
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 504
+1 &lt; Connection: keep-alive
+1 &lt; Date: Mon, 05 Feb 2024 21:12:53 GMT
+1 &lt; x-amzn-RequestId: 9b550574-83bc-418c-9dc9-2f118206fd1e
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; x-amz-apigw-id: SrlVZHfyIAMEuwA=
+1 &lt; X-Amzn-Trace-Id: Root=1-65c14f55-0112965050ad56b6301c6374
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 18572e89ca99b00275cf6291940e9690.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-C1
+1 &lt; X-Amz-Cf-Id: qX3Nz-yslND716WPG9l7LH8_yivSuyGyNUrI4pfXdMGUmURHlw6YCg==
+{&quot;resultObject&quot;:[{&quot;commerce&quot;:{&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0051&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;financialCode&quot;:&quot;0051&quot;,&quot;terminalId&quot;:&quot;AA9642A5&quot;},&quot;transaction&quot;:{&quot;closeId&quot;:&quot;515adb10-96e2-44eb-9871-1cdfc5a910b7&quot;,&quot;date&quot;:&quot;2024-02-05&quot;,&quot;hour&quot;:&quot;16:12:00&quot;,&quot;dateTime&quot;:&quot;2024-02-05T16:12:00&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}],&quot;status&quot;:[{&quot;transactionId&quot;:&quot;515adb10-96e2-44eb-9871-1cdfc5a910b7&quot;,&quot;statusCode&quot;:&quot;00&quot;,&quot;statusDescription&quot;:&quot;PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240205161253&quot;}]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status[0].statusDescription == 'PROCESSED'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.status[0].statusCode == '00'</span>
+
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 

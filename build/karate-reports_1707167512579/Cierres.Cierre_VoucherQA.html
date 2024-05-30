@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>Cierres.Cierre_VoucherQA</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-02-05 04:11:33 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:33]"><span>[1.1:33]</span> <span>peticion Post que envia el cierre Correcto de una determinada terminal o datafono</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:34]"><span>[1.2:34]</span> <span>peticion Post que envia el cierre Correcto de una determinada terminal o datafono</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">Cierres/Cierre_VoucherQA.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Ejecutar Endpoint para realizar el cierre Correcto de una terminal o Datafono</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:33]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:33]</span>
+                <span class="scenario-name">peticion Post que envia el cierre Correcto de una determinada terminal o datafono</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>760</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:33]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def path = &#39;/transactional/api/vouchers/closures&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">16:11:33.075 &lt;&lt; lock released, cached callSingle: classpath:helper/CrearToken.feature
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helper.CrearToken</div>
+      </div>
+      <div class="time-cell passed">1006</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4.0.call.0.4">16:11:31.992 karate.env system property was: dev-corr 
+16:11:32.001 &gt;&gt; lock acquired, begin callSingle: classpath:helper/CrearToken.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/x-www-form-urlencoded&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = tokenAuthorization</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request &#39;grant_type=client_credentials&amp;Scope=consumers%2Ffabrica&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">995</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4.0.call.0.8">16:11:32.463 request:
+1 &gt; POST https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com/oauth2/token
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Authorization: Basic NnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGw6MW5uNjVnOXA1bHY5cnZubHYwdTljNm52cnMzM2hramluNWVrNDNyNTJyYmcwaDhxdmhjMQ==
+1 &gt; Content-Length: 55
+1 &gt; Host: voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=client_credentials&amp;Scope=consumers%2Ffabrica
+
+16:11:33.037 response time in milliseconds: 568
+1 &lt; 200
+1 &lt; Date: Mon, 05 Feb 2024 21:11:31 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy-Report-Only: script-src https://d3oia8etllorh5.cloudfront.net https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com; style-src https://d3oia8etllorh5.cloudfront.net https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com; img-src https://d3oia8etllorh5.cloudfront.net https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com; report-uri https://voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com/cspreport
+1 &lt; x-amz-cognito-request-id: aa60e128-facf-4d7e-a0c2-a6bbc1626fc6
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Server: Server
+1 &lt; Set-Cookie: XSRF-TOKEN=f669bbe6-6d68-4140-95e7-447124d13940; Domain=voucherdigitalclouddevcorr.auth.us-east-1.amazoncognito.com; Secure
+{&quot;access_token&quot;:&quot;eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA3MTY3NDkxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDcxNjkyOTEsImlhdCI6MTcwNzE2NzQ5MSwidmVyc2lvbiI6MiwianRpIjoiZDRmNmE1NWItZDQ1Ny00ZmU2LTk1YzItYzJhNWE5NTljZWJlIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.oufOEXSTM67kEITLfia5a6klMNgcXqj6og7JmrQzf4J4vGW1sNPRiZOc6CCqZphp5TSPkQalVIu0BeaekkJgmnIyU6lSeUkW9uayCBtso8MHaj_8Na-4mJ4RDTCX8SJMGIEbRn3wACRFrz3LY-WPu2uNEsIsQ8_iLFkjKZB9M9Il1cyFSRnw5ClS3x1-ptYmuL7nxXkF9LRj-OspDp6TZTtHYfd9rKTSVc0LF9_8Yr6lEJACf19Sgwhnr_ymjrFxUX3WcE86ZeDNLBlzCq3kJvRKGWBE7ZxmDVpJO1H4TJEs9deYyzL6Yt_E8sijpXv6gBuBsYvyBfNLsWu3aUkddw&quot;,&quot;expires_in&quot;:1800,&quot;token_type&quot;:&quot;Bearer&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def access_token = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1.1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyTrx = read(&#39;classpath:payloads/BodyCierres.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">49</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseTimeRange = { min: 10, max: 15000 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dateTimes = karate.call(&#39;classpath:helper/dateTime.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">428</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.dateTime = dateTimes.date</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.hour = dateTimes.hora</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.date = dateTimes.dia</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path path</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header x-api-key = apiKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].commerce.financialCode = &#39;0051&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].commerce.address = &#39;PRUEBAS CIERRES MIXTO CORR 0051&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].commerce.correspondentId = &#39;92933392&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].commerce.terminalId = &#39;VZASGHDF&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">241</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.21">16:11:33.595 request:
+2 &gt; POST https://apicorr.redebanvd.net/transactional/api/vouchers/closures
+2 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
+2 &gt; Authorization: Bearer eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA3MTY3NDkxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDcxNjkyOTEsImlhdCI6MTcwNzE2NzQ5MSwidmVyc2lvbiI6MiwianRpIjoiZDRmNmE1NWItZDQ1Ny00ZmU2LTk1YzItYzJhNWE5NTljZWJlIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.oufOEXSTM67kEITLfia5a6klMNgcXqj6og7JmrQzf4J4vGW1sNPRiZOc6CCqZphp5TSPkQalVIu0BeaekkJgmnIyU6lSeUkW9uayCBtso8MHaj_8Na-4mJ4RDTCX8SJMGIEbRn3wACRFrz3LY-WPu2uNEsIsQ8_iLFkjKZB9M9Il1cyFSRnw5ClS3x1-ptYmuL7nxXkF9LRj-OspDp6TZTtHYfd9rKTSVc0LF9_8Yr6lEJACf19Sgwhnr_ymjrFxUX3WcE86ZeDNLBlzCq3kJvRKGWBE7ZxmDVpJO1H4TJEs9deYyzL6Yt_E8sijpXv6gBuBsYvyBfNLsWu3aUkddw
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 293
+2 &gt; Host: apicorr.redebanvd.net
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0051&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;terminalId&quot;:&quot;VZASGHDF&quot;,&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;financialCode&quot;:&quot;0051&quot;},&quot;transaction&quot;:{&quot;date&quot;:&quot;20240205&quot;,&quot;dateTime&quot;:&quot;20240205161100&quot;,&quot;hour&quot;:&quot;1611&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}]}
+
+16:11:33.832 response time in milliseconds: 236
+2 &lt; 200
+2 &lt; Content-Type: application/json
+2 &lt; Content-Length: 504
+2 &lt; Connection: keep-alive
+2 &lt; Date: Mon, 05 Feb 2024 21:11:32 GMT
+2 &lt; x-amzn-RequestId: 003fe6e6-f158-4570-80c5-1273e645d471
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; x-amz-apigw-id: SrlIrGxioAMEsAw=
+2 &lt; X-Amzn-Trace-Id: Root=1-65c14f04-24342b395a98d8314788cc89
+2 &lt; X-Cache: Miss from cloudfront
+2 &lt; Via: 1.1 2fe3b10bc3da6ef618e3ab1598c2020c.cloudfront.net (CloudFront)
+2 &lt; X-Amz-Cf-Pop: BOG50-C1
+2 &lt; X-Amz-Cf-Id: wLRx0oT8127rEhC81-UiUyCJy12CmXkbjypf_dMZa4gGsAXI9dWKYw==
+{&quot;resultObject&quot;:[{&quot;commerce&quot;:{&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0051&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;financialCode&quot;:&quot;0051&quot;,&quot;terminalId&quot;:&quot;VZASGHDF&quot;},&quot;transaction&quot;:{&quot;closeId&quot;:&quot;2ac26fea-3b55-496e-9f92-7f7b3818024d&quot;,&quot;date&quot;:&quot;2024-02-05&quot;,&quot;hour&quot;:&quot;16:11:00&quot;,&quot;dateTime&quot;:&quot;2024-02-05T16:11:00&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}],&quot;status&quot;:[{&quot;transactionId&quot;:&quot;2ac26fea-3b55-496e-9f92-7f7b3818024d&quot;,&quot;statusCode&quot;:&quot;00&quot;,&quot;statusDescription&quot;:&quot;PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240205161132&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.status[0].statusDescription == &#39;PROCESSED&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.status[0].statusCode == &#39;00&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:34]</span>
+                <span class="scenario-name">peticion Post que envia el cierre Correcto de una determinada terminal o datafono</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>772</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def path = &#39;/transactional/api/vouchers/closures&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4">16:11:31.992 karate.env system property was: dev-corr 
+16:11:33.076 this thread waited 1074 milliseconds for callSingle lock: classpath:helper/CrearToken.feature
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def bodyTrx = read(&#39;classpath:payloads/BodyCierres.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">62</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseTimeRange = { min: 10, max: 15000 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dateTimes = karate.call(&#39;classpath:helper/dateTime.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">429</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.dateTime = dateTimes.date</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.hour = dateTimes.hora</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set bodyTrx.payload[0].transaction.date = dateTimes.dia</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path path</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header x-api-key = apiKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].commerce.financialCode = &#39;0051&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].commerce.address = &#39;PRUEBAS CIERRES MIXTO CORR 0051&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].commerce.correspondentId = &#39;92933392&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx.payload[0].commerce.terminalId = &#39;AA9642A5&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request bodyTrx</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">258</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.21">16:11:33.596 request:
+1 &gt; POST https://apicorr.redebanvd.net/transactional/api/vouchers/closures
+1 &gt; x-api-key: tZtH1xkzxt8au5Vae8at14kL4MwEZ2su59imax5g
+1 &gt; Authorization: Bearer eyJraWQiOiJpSWxIZlwvdXU2U2JwMGVLSXRIRVJBRFFhVURLQit1RDVpcUVMVFhRbW92OD0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2dGJza2M0ZWx1aXFkcHVwc2ptcTRyOThsbCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY29uc3VtZXJzXC9mYWJyaWNhIiwiYXV0aF90aW1lIjoxNzA3MTY3NDkxLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9wOVR4ZThJNlUiLCJleHAiOjE3MDcxNjkyOTEsImlhdCI6MTcwNzE2NzQ5MSwidmVyc2lvbiI6MiwianRpIjoiZDRmNmE1NWItZDQ1Ny00ZmU2LTk1YzItYzJhNWE5NTljZWJlIiwiY2xpZW50X2lkIjoiNnRic2tjNGVsdWlxZHB1cHNqbXE0cjk4bGwifQ.oufOEXSTM67kEITLfia5a6klMNgcXqj6og7JmrQzf4J4vGW1sNPRiZOc6CCqZphp5TSPkQalVIu0BeaekkJgmnIyU6lSeUkW9uayCBtso8MHaj_8Na-4mJ4RDTCX8SJMGIEbRn3wACRFrz3LY-WPu2uNEsIsQ8_iLFkjKZB9M9Il1cyFSRnw5ClS3x1-ptYmuL7nxXkF9LRj-OspDp6TZTtHYfd9rKTSVc0LF9_8Yr6lEJACf19Sgwhnr_ymjrFxUX3WcE86ZeDNLBlzCq3kJvRKGWBE7ZxmDVpJO1H4TJEs9deYyzL6Yt_E8sijpXv6gBuBsYvyBfNLsWu3aUkddw
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 293
+1 &gt; Host: apicorr.redebanvd.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;payload&quot;:[{&quot;commerce&quot;:{&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0051&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;terminalId&quot;:&quot;AA9642A5&quot;,&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;financialCode&quot;:&quot;0051&quot;},&quot;transaction&quot;:{&quot;date&quot;:&quot;20240205&quot;,&quot;dateTime&quot;:&quot;20240205161100&quot;,&quot;hour&quot;:&quot;1611&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}]}
+
+16:11:33.849 response time in milliseconds: 252
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 504
+1 &lt; Connection: keep-alive
+1 &lt; Date: Mon, 05 Feb 2024 21:11:32 GMT
+1 &lt; x-amzn-RequestId: fb0d84c1-6285-419a-80b0-fe633f078522
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; x-amz-apigw-id: SrlIrF5QoAMEPig=
+1 &lt; X-Amzn-Trace-Id: Root=1-65c14f04-52213ae549747a54578fae02
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 c044357f15da715d4a1fab016bbf0008.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-C1
+1 &lt; X-Amz-Cf-Id: 5Wd-VnIx6tMQg7Wz_quiJv6fkf3k9noOfP12Ck-1jUIXSFesafzSYA==
+{&quot;resultObject&quot;:[{&quot;commerce&quot;:{&quot;correspondentId&quot;:&quot;92933392&quot;,&quot;address&quot;:&quot;PRUEBAS CIERRES MIXTO CORR 0051&quot;,&quot;name&quot;:&quot;testTT WWWWW TTTTTTTT FFFFFFF&quot;,&quot;financialCode&quot;:&quot;0051&quot;,&quot;terminalId&quot;:&quot;AA9642A5&quot;},&quot;transaction&quot;:{&quot;closeId&quot;:&quot;4f5e327a-d8d0-4226-93e5-b98ab791e21a&quot;,&quot;date&quot;:&quot;2024-02-05&quot;,&quot;hour&quot;:&quot;16:11:00&quot;,&quot;dateTime&quot;:&quot;2024-02-05T16:11:00&quot;,&quot;techVersion&quot;:&quot;V42343223T35T&quot;}}],&quot;status&quot;:[{&quot;transactionId&quot;:&quot;4f5e327a-d8d0-4226-93e5-b98ab791e21a&quot;,&quot;statusCode&quot;:&quot;00&quot;,&quot;statusDescription&quot;:&quot;PROCESSED&quot;,&quot;dateTime&quot;:&quot;20240205161132&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert responseTime &gt;= responseTimeRange.min &amp;&amp; responseTime &lt;= responseTimeRange.max</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.status[0].statusDescription == &#39;PROCESSED&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.status[0].statusCode == &#39;00&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
